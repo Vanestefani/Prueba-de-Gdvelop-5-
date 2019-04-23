@@ -13,7 +13,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.programando",
-    "projectFile": "C:\\Users\\user\\Downloads\\semillerojuego-468226daf7db6a08261a04869995e4e01ccf84bc\\semillerojuego-468226daf7db6a08261a04869995e4e01ccf84bc\\isometric-game.json",
+    "projectFile": "C:\\Users\\user\\Documents\\juegos gdevelop\\Semillero\\isometric-game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -3859,73 +3859,7 @@
           "name": "Pantalla Completa",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetFullScreen"
-                  },
-                  "parameters": [
-                    "",
-                    "yes",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Escape\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetFullScreen"
-                  },
-                  "parameters": [
-                    "",
-                    "no",
-                    "no"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
+          "events": [],
           "parameters": []
         }
       ],
@@ -11744,13 +11678,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 700,
+          "height": 776,
           "layer": "",
           "locked": false,
           "name": "Fondo",
-          "width": 1320,
-          "x": 3,
-          "y": -39,
+          "width": 1338,
+          "x": -23,
+          "y": -25,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -11779,8 +11713,8 @@
           "locked": false,
           "name": "descripcion",
           "width": 0,
-          "x": 205,
-          "y": 186,
+          "x": 313,
+          "y": 176,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -11883,7 +11817,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "¡Bienvenido /a a D-CODING ,\nPulse las flechas para desplazarse.\nUtiliza el mouse para presionar los botones de la ventana\n\n",
+          "string": "¡Bienvenido /a a D-CODING ,\nPulse las flechas para desplazarse.\nUtiliza el mouse para presionar \nlos botones de la ventana\n\n",
           "font": "",
           "characterSize": 50,
           "color": {
