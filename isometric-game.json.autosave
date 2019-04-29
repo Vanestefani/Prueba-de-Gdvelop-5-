@@ -3477,6 +3477,24 @@
         "name": "Recursos\\Personajes\\otro\\12.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Recursos/Botones/restart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Recursos\\Botones\\restart.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Recursos/Botones/restart hover.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Recursos\\Botones\\restart hover.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -16792,6 +16810,12 @@
           "objects": [
             {
               "name": "BtnVolver"
+            },
+            {
+              "name": "btnJugar"
+            },
+            {
+              "name": "btnReset"
             }
           ]
         }
@@ -16801,13 +16825,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 976,
+          "height": 880,
           "layer": "",
           "locked": false,
           "name": "Fondo",
-          "width": 1794,
-          "x": -278,
-          "y": -116,
+          "width": 1678,
+          "x": -228,
+          "y": -72,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -16837,7 +16861,7 @@
           "name": "tetnombrees",
           "width": 0,
           "x": 88,
-          "y": 244,
+          "y": 294,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -16867,7 +16891,7 @@
           "name": "NOMBRE",
           "width": 0,
           "x": 464,
-          "y": 240,
+          "y": 290,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -16914,6 +16938,21 @@
           "x": 174,
           "y": 430,
           "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 113,
+          "layer": "",
+          "locked": false,
+          "name": "btnReset",
+          "width": 109,
+          "x": 559,
+          "y": 552,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -17102,6 +17141,91 @@
             "g": 231,
             "r": 248
           }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Instruccion",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "escribe tu nombre con  tu teclado y presion enter al finalizar",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "name": "btnReset",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Recursos\\Botones\\restart.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Recursos\\Botones\\restart hover.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -17152,6 +17276,16 @@
               },
               "parameters": [
                 "btnJugar"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "btnReset"
               ],
               "subInstructions": []
             }
@@ -17262,6 +17396,17 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "btnReset",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "TextObject::String"
                   },
                   "parameters": [
@@ -17278,7 +17423,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -17372,7 +17517,7 @@
                         "value": "SourisSurObjet"
                       },
                       "parameters": [
-                        "BtnJugar",
+                        "btnJugar",
                         "",
                         ""
                       ],
@@ -17422,6 +17567,40 @@
                       "parameters": [
                         "",
                         "\"ElegirPersonaje\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "btnReset",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Nombrar\"",
                         ""
                       ],
                       "subInstructions": []
