@@ -18772,9 +18772,9 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Presiona Z para continuar ...",
+          "string": "Presiona Z para continuar ...\nPresiona X para regresar al menu  principal",
           "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
-          "characterSize": 70,
+          "characterSize": 40,
           "color": {
             "b": 9,
             "g": 9,
@@ -18789,7 +18789,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Texto",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -19425,6 +19425,65 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Volver a menu pricipal :3",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "x"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Menu\"",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"NextLine\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
       "layers": [
