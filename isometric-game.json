@@ -18086,13 +18086,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 738,
+          "height": 862,
           "layer": "",
           "locked": false,
           "name": "Fondo",
-          "width": 1302,
-          "x": -8,
-          "y": -6,
+          "width": 1448,
+          "x": -78,
+          "y": -62,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -18313,18 +18313,6 @@
                     "value": "Opacity"
                   },
                   "parameters": [
-                    "Player",
-                    "=",
-                    "sin(Variable(Fade)*3.14159 )*255"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Opacity"
-                  },
-                  "parameters": [
                     "Botones",
                     "=",
                     "sin(Variable(Fade)*3.14159 )*255"
@@ -18343,7 +18331,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Botones",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
