@@ -3755,6 +3755,44 @@
       ]
     },
     {
+      "name": "EntradaNivel",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "cuadrado-azul",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Recursos\\cuadrado-azul.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "estrella",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -12832,7 +12870,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.5
+        "zoomFactor": 0.25
       },
       "objectsGroups": [
         {
@@ -14379,14 +14417,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 106,
           "layer": "",
           "locked": false,
-          "name": "PlayerHitBox",
-          "width": 0,
-          "x": 1138,
-          "y": 198,
+          "name": "Player",
+          "width": 91,
+          "x": 880,
+          "y": 162,
           "zOrder": 127,
           "numberProperties": [],
           "stringProperties": [],
@@ -15135,43 +15173,7 @@
           "name": "crearjugador",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CreateByName"
-                  },
-                  "parameters": [
-                    "",
-                    "Player",
-                    "GlobalVariableString(selectedCharacter)",
-                    "PlayerHitBox.X()",
-                    "PlayerHitBox.Y()",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
+          "events": [],
           "parameters": []
         },
         {
@@ -15452,7 +15454,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "PruebaDialogo",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -18751,7 +18753,19 @@
         "windowMask": false,
         "zoomFactor": 1
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "Invisibles",
+          "objects": [
+            {
+              "name": "obstaculo"
+            },
+            {
+              "name": "EntradaNivel"
+            }
+          ]
+        }
+      ],
       "variables": [],
       "instances": [
         {
@@ -19545,6 +19559,21 @@
           "x": 733.948,
           "y": 464.88,
           "zOrder": 87,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 178,
+          "layer": "",
+          "locked": false,
+          "name": "EntradaNivel",
+          "width": 297,
+          "x": 563,
+          "y": 570,
+          "zOrder": 88,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
