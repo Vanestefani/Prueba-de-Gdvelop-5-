@@ -7986,7 +7986,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -8087,7 +8087,7 @@
                           },
                           "parameters": [
                             "",
-                            "\"Mundos\"",
+                            "\"ElegirPersonaje\"",
                             ""
                           ],
                           "subInstructions": []
@@ -15126,6 +15126,55 @@
       ],
       "events": [
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "crearjugador",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CreateByName"
+                  },
+                  "parameters": [
+                    "",
+                    "Player",
+                    "GlobalVariableString(selectedCharacter)",
+                    "PlayerHitBox.X()",
+                    "PlayerHitBox.Y()",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Link",
@@ -15403,7 +15452,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "PruebaDialogo",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -18410,28 +18459,7 @@
                           },
                           "parameters": [
                             "",
-                            "\"Instrucciones\"",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Menu\"",
+                            "\"Nombrar\"",
                             ""
                           ],
                           "subInstructions": []
@@ -18477,7 +18505,7 @@
                           },
                           "parameters": [
                             "",
-                            "\"Nombrar\"",
+                            "\"Mundos\"",
                             ""
                           ],
                           "subInstructions": []
@@ -18523,7 +18551,7 @@
                           },
                           "parameters": [
                             "",
-                            "\"Nombrar\"",
+                            "\"Mundos\"",
                             ""
                           ],
                           "subInstructions": []
@@ -18569,7 +18597,7 @@
                           },
                           "parameters": [
                             "",
-                            "\"Nombrar\"",
+                            "\"Mundos\"",
                             ""
                           ],
                           "subInstructions": []

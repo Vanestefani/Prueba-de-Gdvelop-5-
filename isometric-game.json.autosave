@@ -3576,6 +3576,15 @@
         "name": "Recursos\\Selector.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Recursos/AreaJugador.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Recursos\\AreaJugador.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -4408,8 +4417,8 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.3,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
@@ -4648,8 +4657,8 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.3,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
@@ -7977,7 +7986,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -8078,7 +8087,7 @@
                           },
                           "parameters": [
                             "",
-                            "\"Mundos\"",
+                            "\"ElegirPersonaje\"",
                             ""
                           ],
                           "subInstructions": []
@@ -12850,6 +12859,20 @@
               "name": "ExpUp"
             }
           ]
+        },
+        {
+          "name": "JUGADOR",
+          "objects": [
+            {
+              "name": "Player1"
+            },
+            {
+              "name": "Player3"
+            },
+            {
+              "name": "Player2"
+            }
+          ]
         }
       ],
       "variables": [],
@@ -12865,21 +12888,6 @@
           "x": -1373,
           "y": -1033,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 70,
-          "layer": "",
-          "locked": false,
-          "name": "Player",
-          "width": 59,
-          "x": 911,
-          "y": 183,
-          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -14368,6 +14376,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "PlayerHitBox",
+          "width": 0,
+          "x": 1138,
+          "y": 198,
+          "zOrder": 127,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -15061,9 +15084,96 @@
               ]
             }
           ]
+        },
+        {
+          "name": "PlayerHitBox",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Recursos\\AreaJugador.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "crearjugador",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CreateByName"
+                  },
+                  "parameters": [
+                    "",
+                    "Player",
+                    "GlobalVariableString(selectedCharacter)",
+                    "PlayerHitBox.X()",
+                    "PlayerHitBox.Y()",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
         {
           "disabled": false,
           "folded": false,
@@ -15342,7 +15452,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "PruebaDialogo",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -18349,28 +18459,7 @@
                           },
                           "parameters": [
                             "",
-                            "\"Instrucciones\"",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Menu\"",
+                            "\"Nombrar\"",
                             ""
                           ],
                           "subInstructions": []
