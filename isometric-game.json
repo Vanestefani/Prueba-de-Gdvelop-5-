@@ -3576,6 +3576,15 @@
         "name": "Recursos\\Selector.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Recursos/AreaJugador.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Recursos\\AreaJugador.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -12850,6 +12859,20 @@
               "name": "ExpUp"
             }
           ]
+        },
+        {
+          "name": "JUGADOR",
+          "objects": [
+            {
+              "name": "Player1"
+            },
+            {
+              "name": "Player3"
+            },
+            {
+              "name": "Player2"
+            }
+          ]
         }
       ],
       "variables": [],
@@ -12865,21 +12888,6 @@
           "x": -1373,
           "y": -1033,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 70,
-          "layer": "",
-          "locked": false,
-          "name": "Player",
-          "width": 59,
-          "x": 911,
-          "y": 183,
-          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -14368,6 +14376,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "PlayerHitBox",
+          "width": 0,
+          "x": 1138,
+          "y": 198,
+          "zOrder": 127,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -15042,6 +15065,44 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "Recursos\\cuadrodialogo.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PlayerHitBox",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Recursos\\AreaJugador.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
