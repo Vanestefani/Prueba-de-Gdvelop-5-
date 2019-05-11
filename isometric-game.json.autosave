@@ -9126,7 +9126,7 @@
                       },
                       "parameters": [
                         "",
-                        "\"Menu\"",
+                        "\"Nombrar\"",
                         ""
                       ],
                       "subInstructions": []
@@ -9226,6 +9226,36 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MontreSouris"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
       "layers": [
