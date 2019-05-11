@@ -4417,8 +4417,8 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.3,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
@@ -4657,8 +4657,8 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.3,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
