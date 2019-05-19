@@ -3621,6 +3621,15 @@
         "name": "Recursos\\items\\yy.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Recursos/Bullet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Recursos\\Bullet.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3987,7 +3996,7 @@
       "underlined": false,
       "variables": [],
       "behaviors": [],
-      "string": "Felicidades ,recolectastes \ntodas las monedas\nve a la entrada",
+      "string": "Felicidades ,recolectaste \ntodas las monedas\n\nve a la entrada",
       "font": "",
       "characterSize": 60,
       "color": {
@@ -5348,6 +5357,44 @@
           ]
         }
       ]
+    },
+    {
+      "name": "disparo",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Recursos\\Bullet.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [],
@@ -6526,7 +6573,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "El camido de un programador\n es duro y largo ...",
+          "string": "El caminó de un programador\n es duro y largo ...",
           "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
           "characterSize": 80,
           "color": {
@@ -6544,7 +6591,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Presiona Z para continuar ...\nPresiona X para regresar al menu  principal",
+          "string": "Presiona Z para continuar ...\nPresiona X para regresar al menú  principal",
           "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
           "characterSize": 40,
           "color": {
@@ -8955,3521 +9002,6 @@
     {
       "b": 0,
       "disableInputWhenNotFocused": true,
-      "mangledName": "Mundo1",
-      "name": "Mundo1",
-      "oglFOV": 90,
-      "oglZFar": 500,
-      "oglZNear": 1,
-      "r": 0,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "Mundo Bienestar",
-      "v": 0,
-      "uiSettings": {
-        "grid": false,
-        "gridB": 255,
-        "gridG": 180,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridR": 158,
-        "gridWidth": 32,
-        "snap": true,
-        "windowMask": false,
-        "zoomFactor": 0.25
-      },
-      "objectsGroups": [
-        {
-          "name": "Invisibles",
-          "objects": [
-            {
-              "name": "obstaculo"
-            },
-            {
-              "name": "Puerta"
-            },
-            {
-              "name": "EntradaNivel"
-            }
-          ]
-        },
-        {
-          "name": "Inventario",
-          "objects": [
-            {
-              "name": "Moneda"
-            }
-          ]
-        }
-      ],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 4033,
-          "layer": "",
-          "locked": true,
-          "name": "Fondo",
-          "width": 5710,
-          "x": -4420,
-          "y": -2204,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 2413,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 177,
-          "x": 1130,
-          "y": -2174,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 545,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 451,
-          "x": 1280,
-          "y": 170,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 1187,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 410,
-          "x": 1117,
-          "y": 712,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 127,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 130,
-          "x": 1006,
-          "y": 1619,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 139,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 5684,
-          "x": -4437,
-          "y": 1685,
-          "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 151,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 5684,
-          "x": -4376,
-          "y": -2169,
-          "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 3775,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 177,
-          "x": -4284,
-          "y": -2088,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 203,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 151,
-          "x": 972,
-          "y": 1458,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 155,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 155,
-          "x": 964,
-          "y": 1160,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 196,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": 1076,
-          "y": 1308,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 196,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": 1065,
-          "y": 970,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 954,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 90,
-          "x": 140,
-          "y": 778,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 262,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 405,
-          "x": 711,
-          "y": 716,
-          "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 202,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 88,
-          "x": 1003,
-          "y": 1299,
-          "zOrder": 13,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": 1016,
-          "y": 1122,
-          "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 186.986,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": 970,
-          "y": 1133,
-          "zOrder": 15,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 45,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 44,
-          "x": 1022,
-          "y": 1050,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 45,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 44,
-          "x": 985,
-          "y": 1043,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 30,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 22,
-          "x": 970,
-          "y": 1036,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 68,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 444,
-          "x": 652,
-          "y": 668,
-          "zOrder": 18,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": 733.952,
-          "y": 808.095,
-          "zOrder": 19,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 109,
-          "x": 1012,
-          "y": 689,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 439,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 144,
-          "x": 615,
-          "y": 1295,
-          "zOrder": 21,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 268,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": 1082,
-          "y": 708,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 1032,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": 102,
-          "y": 732,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": 68.9388,
-          "y": 1277.41,
-          "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 660,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 144,
-          "x": -3,
-          "y": 1057,
-          "zOrder": 23,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 660,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 144,
-          "x": -387,
-          "y": 1065,
-          "zOrder": 23,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 1380,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 150,
-          "x": -2983,
-          "y": 337,
-          "zOrder": 23,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 644,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 216,
-          "x": -1027,
-          "y": 1057,
-          "zOrder": 24,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 114,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": 662,
-          "y": 1060,
-          "zOrder": 25,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 8,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 162,
-          "x": 602,
-          "y": 1132,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 30,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 22,
-          "x": 730,
-          "y": 1062,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 30,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 22,
-          "x": 754,
-          "y": 1064,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 22,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 10,
-          "x": 782,
-          "y": 1076,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 22,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 186,
-          "x": 570,
-          "y": 1046,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 230,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": 212,
-          "y": 1472,
-          "zOrder": 26,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 230,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": 210,
-          "y": 1206,
-          "zOrder": 26,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 8,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 188,
-          "x": -410,
-          "y": 1094,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 208,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": 566,
-          "y": 1466,
-          "zOrder": 28,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 220,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": 754,
-          "y": 1454,
-          "zOrder": 28,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 54,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 260,
-          "x": 548,
-          "y": 1374,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": 974,
-          "y": 1360,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 100,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": 238,
-          "y": 1236,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 164,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": 244,
-          "y": 1506,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": 244,
-          "y": 1376,
-          "zOrder": 31,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 262,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 405,
-          "x": -265,
-          "y": 728,
-          "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 90,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 554,
-          "x": -398,
-          "y": 724,
-          "zOrder": 18,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 542,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 66,
-          "x": -276,
-          "y": 1148,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 542,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 66,
-          "x": -438,
-          "y": 1144,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 22,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 94,
-          "x": -1322,
-          "y": 1072,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 8,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 162,
-          "x": 604,
-          "y": 1086,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 26,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 28,
-          "x": -251,
-          "y": 1057,
-          "zOrder": 32,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 470,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 116,
-          "x": -817,
-          "y": 1227,
-          "zOrder": 33,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 284,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 404,
-          "x": -1279,
-          "y": 696,
-          "zOrder": 34,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 112,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 32,
-          "x": -909,
-          "y": 972,
-          "zOrder": 35,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 74,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 328,
-          "x": -1505,
-          "y": 703,
-          "zOrder": 36,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 660,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 304,
-          "x": -2027,
-          "y": 1173,
-          "zOrder": 23,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 22,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 186,
-          "x": -422,
-          "y": 1056,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 22,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 186,
-          "x": -1406,
-          "y": 1052,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 22,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 186,
-          "x": -1414,
-          "y": 1088,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 660,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 216,
-          "x": -1415,
-          "y": 1109,
-          "zOrder": 23,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 984,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 134,
-          "x": -1963,
-          "y": 725,
-          "zOrder": 23,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 628,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": -2866,
-          "y": 1055,
-          "zOrder": 37,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 660,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 248,
-          "x": -2443,
-          "y": 1145,
-          "zOrder": 23,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 266,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 404,
-          "x": -2285,
-          "y": 728,
-          "zOrder": 34,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 660,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 304,
-          "x": -2991,
-          "y": 1177,
-          "zOrder": 23,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 74,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 328,
-          "x": -2453,
-          "y": 735,
-          "zOrder": 36,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 28,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 232,
-          "x": -2450,
-          "y": 1083,
-          "zOrder": 38,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 28,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 232,
-          "x": -2422,
-          "y": 1055,
-          "zOrder": 38,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 42,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 118,
-          "x": -2022,
-          "y": 1064,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": -2354,
-          "y": 1091,
-          "zOrder": 39,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": -2002,
-          "y": 1131,
-          "zOrder": 40,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 300,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 184,
-          "x": -3229,
-          "y": 104,
-          "zOrder": 41,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 364,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 60,
-          "x": -3397,
-          "y": 508,
-          "zOrder": 41,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 164,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 244,
-          "x": -3541,
-          "y": 1132,
-          "zOrder": 42,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 356,
-          "x": -3445,
-          "y": 1092,
-          "zOrder": 43,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 132,
-          "x": -3841,
-          "y": -280,
-          "zOrder": 44,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 276,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 464,
-          "x": -4037,
-          "y": -92,
-          "zOrder": 45,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 336,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 292,
-          "x": -3953,
-          "y": 404,
-          "zOrder": 46,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 168,
-          "x": -3449,
-          "y": 480,
-          "zOrder": 47,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 120,
-          "x": -3429,
-          "y": 440,
-          "zOrder": 48,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": -3269,
-          "y": 348,
-          "zOrder": 49,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 104,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 20,
-          "x": -3269,
-          "y": 260,
-          "zOrder": 50,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": -28.3008,
-          "customSize": true,
-          "height": 56,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 156,
-          "x": -3893,
-          "y": 999,
-          "zOrder": 51,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 68,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 168,
-          "x": -3449,
-          "y": 836,
-          "zOrder": 47,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 120,
-          "x": -3421,
-          "y": 884,
-          "zOrder": 48,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 184,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 192,
-          "x": -3977,
-          "y": 1283,
-          "zOrder": 52,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": -219.841,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 236,
-          "x": -3701,
-          "y": 1287,
-          "zOrder": 53,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 68,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 132,
-          "x": -3669,
-          "y": 543,
-          "zOrder": 54,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 36,
-          "x": -3381,
-          "y": 395,
-          "zOrder": 55,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 96,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 28,
-          "x": -3373,
-          "y": 923,
-          "zOrder": 56,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 139.399,
-          "customSize": true,
-          "height": 130,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 24,
-          "x": -3774,
-          "y": 685,
-          "zOrder": 57,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 100,
-          "x": -3604,
-          "y": 1133,
-          "zOrder": 58,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": -39.0939,
-          "customSize": true,
-          "height": 374,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 18,
-          "x": -3468,
-          "y": 1015,
-          "zOrder": 59,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 110,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 206,
-          "x": -3866,
-          "y": 1385,
-          "zOrder": 60,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 164,
-          "x": -3872,
-          "y": 1225,
-          "zOrder": 61,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 150,
-          "x": -3976,
-          "y": 1249,
-          "zOrder": 62,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 150,
-          "x": -4072,
-          "y": 1341,
-          "zOrder": 62,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 98,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": -3692,
-          "y": 1129,
-          "zOrder": 63,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": -3800,
-          "y": 1291,
-          "zOrder": 64,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 47.3896,
-          "customSize": true,
-          "height": 518,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 18,
-          "x": -3668,
-          "y": 925,
-          "zOrder": 59,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 1286,
-          "x": -4114,
-          "y": -489,
-          "zOrder": 65,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": -3888,
-          "y": -1654,
-          "zOrder": 66,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": -3364,
-          "y": -1658,
-          "zOrder": 66,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": -3372,
-          "y": -1362,
-          "zOrder": 66,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": -3372,
-          "y": -1150,
-          "zOrder": 66,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": -3852,
-          "y": -1158,
-          "zOrder": 66,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": -3868,
-          "y": -1402,
-          "zOrder": 66,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 96,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 128,
-          "x": -3948,
-          "y": -1618,
-          "zOrder": 67,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 96,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 128,
-          "x": -3420,
-          "y": -1626,
-          "zOrder": 67,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 96,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 128,
-          "x": -3928,
-          "y": -1358,
-          "zOrder": 67,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 96,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 128,
-          "x": -3896,
-          "y": -1122,
-          "zOrder": 67,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 96,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 128,
-          "x": -3424,
-          "y": -1106,
-          "zOrder": 67,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 340,
-          "x": -3772,
-          "y": -2062,
-          "zOrder": 68,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 340,
-          "x": -3716,
-          "y": -1994,
-          "zOrder": 68,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 104,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 136,
-          "x": -3440,
-          "y": -1330,
-          "zOrder": 69,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 1068,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 144,
-          "x": -3124,
-          "y": -2030,
-          "zOrder": 70,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 132,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 204,
-          "x": -2405,
-          "y": -974,
-          "zOrder": 71,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 160,
-          "x": -2209,
-          "y": -962,
-          "zOrder": 72,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 192,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 36,
-          "x": -1989,
-          "y": -1034,
-          "zOrder": 73,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 96,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": -2073,
-          "y": -998,
-          "zOrder": 74,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 108,
-          "x": -2013,
-          "y": -982,
-          "zOrder": 75,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 132,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 228,
-          "x": 759,
-          "y": -966,
-          "zOrder": 76,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 200,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": 539,
-          "y": -1042,
-          "zOrder": 77,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 96,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 64,
-          "x": 595,
-          "y": -1002,
-          "zOrder": 78,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 0,
-          "x": 495,
-          "y": -978,
-          "zOrder": 79,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 24,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 228,
-          "x": 599,
-          "y": -950,
-          "zOrder": 80,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 498,
-          "layer": "",
-          "locked": false,
-          "name": "EntradaNivel",
-          "width": 178,
-          "x": 1239,
-          "y": 210,
-          "zOrder": 81,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 178,
-          "layer": "",
-          "locked": false,
-          "name": "Puerta",
-          "width": 578,
-          "x": -881,
-          "y": 650,
-          "zOrder": 82,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 178,
-          "layer": "",
-          "locked": false,
-          "name": "Puerta",
-          "width": 578,
-          "x": 149,
-          "y": 660,
-          "zOrder": 82,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 178,
-          "layer": "",
-          "locked": false,
-          "name": "Puerta",
-          "width": 578,
-          "x": -2891,
-          "y": 690,
-          "zOrder": 82,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 828,
-          "layer": "",
-          "locked": false,
-          "name": "Puerta",
-          "width": 98,
-          "x": -2921,
-          "y": -450,
-          "zOrder": 83,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 211,
-          "layer": "",
-          "locked": false,
-          "name": "obstaculo",
-          "width": 291,
-          "x": 524,
-          "y": 1128,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 142,
-          "layer": "GUI",
-          "locked": false,
-          "name": "VentanaInventario",
-          "width": 610,
-          "x": 322,
-          "y": 57,
-          "zOrder": 84,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 113,
-          "layer": "GUI",
-          "locked": false,
-          "name": "BtnVolver",
-          "width": 167,
-          "x": 1086,
-          "y": 24,
-          "zOrder": 85,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "GUI",
-          "locked": false,
-          "name": "titulo",
-          "width": 0,
-          "x": 555.899,
-          "y": 59,
-          "zOrder": 86,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -791.872,
-          "y": -191.5,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -128,
-          "y": 1265,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 304,
-          "y": 389,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -3603.34,
-          "y": -1436.36,
-          "zOrder": 88,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -3603.34,
-          "y": -1436.36,
-          "zOrder": 89,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 968,
-          "y": 313,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 872,
-          "y": 1449,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 888,
-          "y": 537,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 124,
-          "y": 141,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 404,
-          "y": 1357,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 880,
-          "y": 1101,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 364,
-          "y": 977,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -616,
-          "y": 969,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -1164,
-          "y": 1185,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -1680,
-          "y": 1049,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -1608,
-          "y": 1421,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -1116,
-          "y": 1457,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -1620,
-          "y": 837,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -1400,
-          "y": 889,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -1908,
-          "y": 445,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -912,
-          "y": 429,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -2639.94,
-          "y": 977,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -2119.94,
-          "y": 1349,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -3339.25,
-          "y": -55,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -3123.25,
-          "y": 773,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -3107.25,
-          "y": -103,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -3211.25,
-          "y": -1355.29,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -3635.25,
-          "y": -1175.29,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -1991.25,
-          "y": -1359.29,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -1951.25,
-          "y": -515.29,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -3207.25,
-          "y": -719.29,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -663.25,
-          "y": -1187.29,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -183.25,
-          "y": -791.29,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -1287.25,
-          "y": -1395.29,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -1351.25,
-          "y": -495.29,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 494.21,
-          "y": -1451.29,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 1038.21,
-          "y": -1611.29,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 946.21,
-          "y": -519.29,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -1601.79,
-          "y": 69.73,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 66,
-          "layer": "",
-          "locked": false,
-          "name": "Player",
-          "width": 49,
-          "x": 928,
-          "y": 427,
-          "zOrder": 93,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Player",
-          "width": 100,
-          "x": 60,
-          "y": -385,
-          "zOrder": 94,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 56,
-          "layer": "GUI",
-          "locked": false,
-          "name": "estrella",
-          "width": 63,
-          "x": 28,
-          "y": 26,
-          "zOrder": 95,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "GUI",
-          "locked": false,
-          "name": "TxtPuntos",
-          "width": 0,
-          "x": 100,
-          "y": 39,
-          "zOrder": 96,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 142,
-          "layer": "GUI",
-          "locked": false,
-          "name": "VentanaInventario",
-          "width": 610,
-          "x": 322,
-          "y": 57,
-          "zOrder": 84,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 142,
-          "layer": "GUI",
-          "locked": false,
-          "name": "VentanaInventario",
-          "width": 610,
-          "x": 322,
-          "y": 57,
-          "zOrder": 84,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "name": "Fondo",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "completa",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\Fondos\\Bienestar\\completa.PNG",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Puerta",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\cuadrado-azul.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "EntradaNivel",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "cuadrado-azul",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\cuadrado-azul.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Moneda",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\items\\coinGold.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "VentanaInventario",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\Ventanas\\ventana.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "BtnVolver",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\Botones\\btn volver.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\Botones\\btn volver hover.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "bold": true,
-          "italic": false,
-          "name": "TxtPuntos",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "X 0",
-          "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 10,
-            "g": 10,
-            "r": 13
-          }
-        },
-        {
-          "bold": true,
-          "italic": false,
-          "name": "titulo",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Inventario",
-          "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 10,
-            "g": 10,
-            "r": 13
-          }
-        },
-        {
-          "name": "estrella",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\items\\eSTRLLA.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Funciones del personaje",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "FPersonaje"
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "FpEscenas"
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "fobjetos"
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": true,
-          "name": "boton volver",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Si el boton no es tocado :O",
-              "comment2": ""
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "BtnVolver",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "BtnVolver",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Si el boton es tocado",
-              "comment2": ""
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "BtnVolver",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "BtnVolver",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "cambiar escena",
-                  "comment2": ""
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SourisBouton"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Menu\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarGlobal"
-                      },
-                      "parameters": [
-                        "puntos",
-                        "=",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "cambiar escena",
-              "comment2": ""
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisBouton"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Menu\"",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "puntos",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Sonido de boton",
-              "comment2": ""
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "BtnVolver",
-                    "Left",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "PlaySoundCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "Recursos\\Sonidos\\completetask_0.mp3",
-                    "no",
-                    "no",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        }
-      ],
-      "layers": [
-        {
-          "name": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": []
-        },
-        {
-          "name": "fondov2",
-          "visibility": true,
-          "cameras": [],
-          "effects": []
-        },
-        {
-          "name": "Layer2",
-          "visibility": true,
-          "cameras": [],
-          "effects": []
-        },
-        {
-          "name": "GUI",
-          "visibility": true,
-          "cameras": [],
-          "effects": []
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        }
-      ]
-    },
-    {
-      "b": 0,
-      "disableInputWhenNotFocused": true,
       "mangledName": "bienestar",
       "name": "bienestar",
       "oglFOV": 90,
@@ -12491,7 +9023,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1
+        "zoomFactor": 0.5
       },
       "objectsGroups": [
         {
@@ -14142,36 +10674,6 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 51,
-          "layer": "",
-          "locked": false,
-          "name": "item1",
-          "width": 54,
-          "x": 870,
-          "y": 192,
-          "zOrder": 130,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 63,
-          "layer": "",
-          "locked": false,
-          "name": "item2",
-          "width": 69,
-          "x": 738,
-          "y": -155,
-          "zOrder": 131,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         }
       ],
       "objects": [
@@ -15430,6 +11932,15 @@
             "includeConfig": 0
           },
           "target": "Inventario"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Disparo"
         }
       ],
       "layers": [
@@ -15665,7 +12176,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "*Pulse las flechas para desplazar.\n*Utiliza el mouse para presionar \nlos botones de la ventana\n*Presiona  la tecla I para \nocultar y mostrar el menu\n*Preciona z para interactuar\n\n",
+          "string": "* Pulse las flechas para desplazar.\n* Utiliza el mouse para presionar \nlos botones de la ventana\n* Presiona la tecla I para \nocultar y mostrar el menú\n* Presiona z para interactuar\n\n",
           "font": "Recursos\\Tipografias\\Germania_One\\GermaniaOne-Regular.ttf",
           "characterSize": 50,
           "color": {
@@ -19680,7 +16191,7 @@
   ],
   "externalEvents": [
     {
-      "associatedLayout": "Mundo1",
+      "associatedLayout": "bienestar",
       "lastChangeTimeStamp": 0,
       "name": "FPersonaje",
       "events": [
@@ -19901,6 +16412,18 @@
                 "no"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "direccion",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -19969,6 +16492,18 @@
                 "no"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "direccion",
+                "=",
+                "180"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -20015,6 +16550,18 @@
                 "2"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "direccion",
+                "=",
+                "260"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -20059,6 +16606,18 @@
                 "JUGADOR",
                 "=",
                 "3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "direccion",
+                "=",
+                "90"
               ],
               "subInstructions": []
             }
@@ -20868,7 +17427,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Inicio",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21121,7 +17680,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -22917,6 +19476,294 @@
             }
           ],
           "parameters": []
+        }
+      ]
+    },
+    {
+      "associatedLayout": "bienestar",
+      "lastChangeTimeStamp": 0,
+      "name": "Disparo",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "disparo",
+                "=",
+                "100"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeWidth"
+              },
+              "parameters": [
+                "disparo",
+                "=",
+                "10"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeHeight"
+              },
+              "parameters": [
+                "disparo",
+                "=",
+                "10"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
+                  ],
+                  "subInstructions": []
+                }
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "every 0.25 seconds shoot a bullet from the firespot point of kenney (thi is a custom point we added to the object)",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "NOTE: when we apply force to the bullet, damping is set to 1 means once the force applied we continue apply it otherwise the bullet would stop when the mouse button is not down or the timer is less than 0.25\nNOTE: we have added the behaviour \"destroy outside screen\" to the bullet object so it is going to be destroyed once it is not visible to save memory",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    "0.25",
+                    "shoot-timer"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "disparo",
+                    "JUGADOR.PointX(\"firespot\")",
+                    "JUGADOR.PointY(\"firespot\")",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "disparo",
+                    "=",
+                    "JUGADOR.Angle()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "disparo",
+                    "Variable(direccion)\n",
+                    "300",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "shoot-timer"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Angle"
+              },
+              "parameters": [
+                "disparo",
+                "=",
+                "90"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "disparo",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipY"
+              },
+              "parameters": [
+                "disparo",
+                "yes"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Angle"
+              },
+              "parameters": [
+                "disparo",
+                "=",
+                "180"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "FlipX"
+              },
+              "parameters": [
+                "disparo",
+                "no"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Rotate"
+              },
+              "parameters": [
+                "disparo",
+                "90",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ]
     }
