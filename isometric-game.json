@@ -3989,9 +3989,9 @@
       "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
       "characterSize": 20,
       "color": {
-        "b": 10,
-        "g": 10,
-        "r": 13
+        "b": 5,
+        "g": 117,
+        "r": 65
       }
     },
     {
@@ -4965,9 +4965,9 @@
       "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
       "characterSize": 20,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 5,
+        "g": 117,
+        "r": 65
       }
     },
     {
@@ -18709,8 +18709,8 @@
                       "parameters": [
                         "",
                         "ExpUp",
-                        "barraexperiencia.X()",
-                        "barraexperiencia.Y()-10",
+                        "JUGADOR.X()",
+                        "JUGADOR.Y()-10",
                         "\"GUI\""
                       ],
                       "subInstructions": []
