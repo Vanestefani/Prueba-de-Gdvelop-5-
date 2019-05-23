@@ -5781,6 +5781,82 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Cuadrodialogo",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Recursos\\cuadro dialogo.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DiaPersonaje",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Recursos\\cuadrodialogo.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [],
@@ -9464,6 +9540,14 @@
           ]
         },
         {
+          "name": "ENEMIGOS",
+          "objects": [
+            {
+              "name": "Error"
+            }
+          ]
+        },
+        {
           "name": "items",
           "objects": [
             {
@@ -9477,14 +9561,6 @@
             },
             {
               "name": "item4"
-            }
-          ]
-        },
-        {
-          "name": "ENEMIGOS",
-          "objects": [
-            {
-              "name": "Error"
             }
           ]
         }
@@ -11770,6 +11846,66 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Inventario",
+          "locked": false,
+          "name": "titulo",
+          "width": 0,
+          "x": 511,
+          "y": 2,
+          "zOrder": 86,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 142,
+          "layer": "Inventario",
+          "locked": false,
+          "name": "VentanaInventario",
+          "width": 610,
+          "x": 279,
+          "y": 2,
+          "zOrder": 84,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Inventario",
+          "locked": false,
+          "name": "titulo",
+          "width": 0,
+          "x": 511,
+          "y": 2,
+          "zOrder": 86,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 142,
+          "layer": "Inventario",
+          "locked": false,
+          "name": "VentanaInventario",
+          "width": 610,
+          "x": 279,
+          "y": 2,
+          "zOrder": 84,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -12371,44 +12507,6 @@
           ]
         },
         {
-          "name": "Cuadrodialogo",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\cuadro dialogo.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "bold": true,
           "italic": false,
           "name": "DialogoText",
@@ -12425,44 +12523,6 @@
             "g": 255,
             "r": 255
           }
-        },
-        {
-          "name": "DiaPersonaje",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\cuadrodialogo.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ],
       "events": [
@@ -13776,6 +13836,71 @@
             },
             {
               "name": "EntradaNivel"
+            },
+            {
+              "name": "Izquierda"
+            },
+            {
+              "name": "derecha"
+            },
+            {
+              "name": "arriba"
+            },
+            {
+              "name": "Abajo"
+            },
+            {
+              "name": "DiaPersonaje"
+            }
+          ]
+        },
+        {
+          "name": "ENEMIGOS",
+          "objects": [
+            {
+              "name": "Error"
+            }
+          ]
+        },
+        {
+          "name": "items",
+          "objects": [
+            {
+              "name": "item1"
+            },
+            {
+              "name": "item2"
+            },
+            {
+              "name": "item3"
+            },
+            {
+              "name": "item4"
+            }
+          ]
+        },
+        {
+          "name": "JUGADOR",
+          "objects": [
+            {
+              "name": "Player1"
+            },
+            {
+              "name": "Player3"
+            },
+            {
+              "name": "Player2"
+            }
+          ]
+        },
+        {
+          "name": "Up",
+          "objects": [
+            {
+              "name": "NivelUp"
+            },
+            {
+              "name": "ExpUp"
             }
           ]
         }
@@ -16296,6 +16421,71 @@
             },
             {
               "name": "EntradaNivel"
+            },
+            {
+              "name": "Izquierda"
+            },
+            {
+              "name": "derecha"
+            },
+            {
+              "name": "Abajo"
+            },
+            {
+              "name": "arriba"
+            },
+            {
+              "name": "DiaPersonaje"
+            }
+          ]
+        },
+        {
+          "name": "ENEMIGOS",
+          "objects": [
+            {
+              "name": "Error"
+            }
+          ]
+        },
+        {
+          "name": "items",
+          "objects": [
+            {
+              "name": "item1"
+            },
+            {
+              "name": "item2"
+            },
+            {
+              "name": "item3"
+            },
+            {
+              "name": "item4"
+            }
+          ]
+        },
+        {
+          "name": "JUGADOR",
+          "objects": [
+            {
+              "name": "Player1"
+            },
+            {
+              "name": "Player2"
+            },
+            {
+              "name": "Player3"
+            }
+          ]
+        },
+        {
+          "name": "Up",
+          "objects": [
+            {
+              "name": "NivelUp"
+            },
+            {
+              "name": "ExpUp"
             }
           ]
         }
@@ -17285,8 +17475,8 @@
           "locked": false,
           "name": "delete",
           "width": 71,
-          "x": 770.219,
-          "y": 45,
+          "x": 754,
+          "y": 49,
           "zOrder": 129,
           "numberProperties": [],
           "stringProperties": [],
