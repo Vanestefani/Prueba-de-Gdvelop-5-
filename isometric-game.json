@@ -5937,6 +5937,82 @@
           ]
         }
       ]
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "Pregunta",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "¿Esta es la pregunta numero 1?",
+      "font": "",
+      "characterSize": 50,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "RepuestaCorrecta",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Esta es la respueta correcta",
+      "font": "",
+      "characterSize": 35,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "RespuestaIncorrectaUNO",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Respuesta Incorrecta",
+      "font": "",
+      "characterSize": 35,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "RespuestaIncorrectaDOS",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "ESTA RESPUESTA EN INCORRECTA",
+      "font": "",
+      "characterSize": 35,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
     }
   ],
   "objectsGroups": [],
@@ -10325,7 +10401,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.572
+        "zoomFactor": 0.524
       },
       "objectsGroups": [
         {
@@ -10406,7 +10482,17 @@
         },
         {
           "name": "Respuestas",
-          "objects": []
+          "objects": [
+            {
+              "name": "RespuestaIncorrectaUNO"
+            },
+            {
+              "name": "RepuestaCorrecta"
+            },
+            {
+              "name": "RespuestaIncorrectaDOS"
+            }
+          ]
         }
       ],
       "variables": [],
@@ -12877,11 +12963,26 @@
           "height": 169,
           "layer": "preguntas",
           "locked": false,
-          "name": "RespuestaIncorrecta",
+          "name": "RespuestaIncorrectaUNO",
           "width": 1038,
           "x": 124,
           "y": 407,
           "zOrder": 167,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "preguntas",
+          "locked": false,
+          "name": "RespuestaIncorrectaDOS",
+          "width": 0,
+          "x": 119,
+          "y": 557,
+          "zOrder": 168,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13560,25 +13661,6 @@
           ]
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "NewObject3",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Preguntas",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 249,
-            "g": 249,
-            "r": 249
-          }
-        },
-        {
           "name": "FondoNegro",
           "tags": "",
           "type": "Sprite",
@@ -13616,63 +13698,6 @@
               ]
             }
           ]
-        },
-        {
-          "bold": true,
-          "italic": false,
-          "name": "Pregunta",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "¿Esta es la pregunta numero 1?",
-          "font": "",
-          "characterSize": 50,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "RepuestaCorrecta",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Esta es la respueta correcta",
-          "font": "",
-          "characterSize": 35,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "RespuestaIncorrecta",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Respuesta Incorrecta",
-          "font": "",
-          "characterSize": 35,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
         }
       ],
       "events": [
@@ -21846,7 +21871,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Pausa juego y mostrar preguntas",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22044,7 +22069,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Cambiar texto preguntas y respuestas",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22086,7 +22111,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22101,6 +22126,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22144,7 +22181,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22159,6 +22196,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22202,7 +22251,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22217,6 +22266,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22260,7 +22321,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22275,6 +22336,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22318,7 +22391,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22333,6 +22406,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22376,7 +22461,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22391,6 +22476,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22434,7 +22531,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22449,6 +22546,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22492,7 +22601,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22507,6 +22616,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22550,7 +22671,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22565,6 +22686,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es \ncorrecta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22608,7 +22741,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22625,8 +22758,56 @@
                     "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
+                  ],
+                  "subInstructions": []
                 }
               ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "QUIZ",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Respuestas",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
               "events": []
             }
           ],
