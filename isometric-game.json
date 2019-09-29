@@ -6219,7 +6219,7 @@
       "title": "Menu",
       "v": 0,
       "uiSettings": {
-        "grid": true,
+        "grid": false,
         "gridB": 255,
         "gridG": 180,
         "gridHeight": 32,
@@ -6227,9 +6227,9 @@
         "gridOffsetY": 0,
         "gridR": 158,
         "gridWidth": 32,
-        "snap": true,
+        "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.524
+        "zoomFactor": 0.476
       },
       "objectsGroups": [
         {
@@ -6254,8 +6254,8 @@
           "locked": false,
           "name": "Logo",
           "width": 824,
-          "x": 160,
-          "y": 59,
+          "x": 179,
+          "y": 57,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -7797,7 +7797,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Botones",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8146,9 +8146,9 @@
         "gridOffsetY": 0,
         "gridR": 158,
         "gridWidth": 32,
-        "snap": false,
+        "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.5096
+        "zoomFactor": 0.5752
       },
       "objectsGroups": [
         {
@@ -9015,7 +9015,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "* Pulse las flechas para desplazar.\n* Utiliza el mouse para presionar \nlos botones de la ventana\n* Presiona la tecla I para \nocultar y mostrar el menú\n* Presiona z para interactuar\n\n",
+          "string": "* Pulse las flechas para desplazar.\n* Utiliza el mouse para presionar \nlos botones de la ventana\n* Presiona la tecla I para \nocultar y mostrar el menú\n* Presiona z para interactuar\n* Presiona x para disparar\n\n",
           "font": "Recursos\\Tipografias\\Germania_One\\GermaniaOne-Regular.ttf",
           "characterSize": 50,
           "color": {
@@ -9100,7 +9100,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Animacion inicial",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9204,7 +9204,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Botones",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9354,7 +9354,7 @@
                           },
                           "parameters": [
                             "",
-                            "\"Menu\"",
+                            "\"ElegirPersonaje\"",
                             ""
                           ],
                           "subInstructions": []
@@ -14316,7 +14316,7 @@
         },
         {
           "name": "preguntas",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         }
@@ -18336,7 +18336,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "movimiento de personajes",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21500,21 +21500,6 @@
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -21531,7 +21516,7 @@
                   },
                   "parameters": [
                     "",
-                    "Space"
+                    "x"
                   ],
                   "subInstructions": []
                 }
@@ -21540,36 +21525,6 @@
           ],
           "actions": [],
           "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "every 0.25 seconds shoot a bullet from the firespot point of kenney (thi is a custom point we added to the object)",
-              "comment2": ""
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "NOTE: when we apply force to the bullet, damping is set to 1 means once the force applied we continue apply it otherwise the bullet would stop when the mouse button is not down or the timer is less than 0.25\nNOTE: we have added the behaviour \"destroy outside screen\" to the bullet object so it is going to be destroyed once it is not visible to save memory",
-              "comment2": ""
-            },
             {
               "disabled": false,
               "folded": false,
@@ -21990,7 +21945,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22048,7 +22003,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22106,7 +22061,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22164,7 +22119,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22222,7 +22177,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22280,7 +22235,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22338,7 +22293,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22396,7 +22351,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22454,7 +22409,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es \ncorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22512,7 +22467,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22521,174 +22476,6 @@
             }
           ],
           "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "Respuestas",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::ChangeColor"
-              },
-              "parameters": [
-                "Respuestas",
-                "\"242;248;101\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "RespuestaIncorrecta",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "JUGADOR",
-                        "vida",
-                        "-",
-                        "2\n"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "HideLayer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"preguntas\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "RepuestaCorrecta",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "HideLayer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"preguntas\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "Respuestas",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::ChangeColor"
-              },
-              "parameters": [
-                "Respuestas",
-                "\"255;255;255\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
         }
       ]
     }
