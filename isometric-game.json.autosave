@@ -5952,6 +5952,10 @@
     {
       "name": "Exp",
       "value": ""
+    },
+    {
+      "name": "just_unpaused",
+      "value": ""
     }
   ],
   "layouts": [
@@ -10321,7 +10325,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.404
+        "zoomFactor": 0.572
       },
       "objectsGroups": [
         {
@@ -13534,7 +13538,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Recursos\\Fondos\\fondoazul.png",
+                      "image": "Recursos\\cuadro dialogo.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14316,7 +14320,7 @@
         },
         {
           "name": "preguntas",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         }
@@ -21839,6 +21843,68 @@
         {
           "disabled": false,
           "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Juego en pausa",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "just_unpaused",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "al tocal moneda que aparescan ventana de preguntas",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -21853,6 +21919,14 @@
                 "",
                 ""
               ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
               "subInstructions": []
             }
           ],
@@ -21881,7 +21955,74 @@
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "just_unpaused",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "just_unpaused",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "colorB": 228,
@@ -21945,7 +22086,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22003,7 +22144,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22061,7 +22202,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22119,7 +22260,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22177,7 +22318,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22235,7 +22376,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22293,7 +22434,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22351,7 +22492,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
@@ -22409,7 +22550,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es \ncorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22467,7 +22608,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es incorrecta \""
+                    "\"Esta respuesta es correcta \""
                   ],
                   "subInstructions": []
                 }
