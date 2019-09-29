@@ -12,7 +12,7 @@
     "linuxExecutableFilename": "",
     "macExecutableFilename": "",
     "orientation": "landscape",
-    "packageName": "com.example.programando",
+    "packageName": "com.example.DCONDING",
     "projectFile": "D:\\vanessa u\\Programas\\semillerojuego\\isometric-game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
@@ -20,9 +20,9 @@
     "version": "1.0.0",
     "winExecutableFilename": "",
     "winExecutableIconFile": "",
-    "name": "Programando",
+    "name": "D-CODING",
     "author": "Semillero",
-    "windowWidth": 1280,
+    "windowWidth": 1200,
     "windowHeight": 720,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
@@ -3720,6 +3720,33 @@
         "name": "Recursos\\laserRed11.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Recursos/Fondos/fondoazul.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Recursos\\Fondos\\fondoazul.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Recursos/Fondos/fondo espacio.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Recursos\\Fondos\\fondo espacio.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Recursos/Fondos/Fondo negro.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Recursos\\Fondos\\Fondo negro.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -5911,18 +5938,18 @@
   ],
   "layouts": [
     {
-      "b": 0,
+      "b": 39,
       "disableInputWhenNotFocused": true,
       "mangledName": "Splash",
       "name": "Splash",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
-      "r": 0,
+      "r": 20,
       "standardSortMethod": true,
       "stopSoundsOnStartup": false,
       "title": "",
-      "v": 0,
+      "v": 30,
       "uiSettings": {
         "grid": false,
         "gridB": 255,
@@ -5934,7 +5961,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.5
+        "zoomFactor": 0.524
       },
       "objectsGroups": [],
       "variables": [],
@@ -5942,13 +5969,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 201,
+          "height": 182,
           "layer": "",
           "locked": false,
           "name": "Logo",
-          "width": 1126,
-          "x": 87,
-          "y": 220,
+          "width": 1024,
+          "x": 90,
+          "y": 271,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -6000,6 +6027,21 @@
         {
           "disabled": false,
           "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Animacion Fade de logo",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6017,21 +6059,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PlaySoundCanal"
-              },
-              "parameters": [
-                "",
-                "Recursos\\Sonidos\\Slash.ogg",
-                "0",
-                "no",
-                "50",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "Opacity"
               },
               "parameters": [
@@ -6043,6 +6070,42 @@
             }
           ],
           "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Logo",
+                "+",
+                "TimeDelta()*60"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Cambiar escena cuando el logo es visible",
+          "comment2": ""
         },
         {
           "disabled": false,
@@ -6077,40 +6140,6 @@
             }
           ],
           "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Opacity"
-              },
-              "parameters": [
-                "Logo",
-                "+",
-                "TimeDelta()*30"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Pantalla Completa",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [],
-          "parameters": []
         }
       ],
       "layers": [
@@ -6130,6 +6159,25 @@
             }
           ],
           "effects": []
+        },
+        {
+          "name": "Fondo",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectName": "BlackAndWhite",
+              "name": "Effect",
+              "parameters": {
+                "blur": 8,
+                "brightness": 0,
+                "kernelSize": 5,
+                "opacity": 1,
+                "quality": 1,
+                "resolution": 2
+              }
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -6153,7 +6201,7 @@
       "title": "Menu",
       "v": 0,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridB": 255,
         "gridG": 180,
         "gridHeight": 32,
@@ -6161,9 +6209,9 @@
         "gridOffsetY": 0,
         "gridR": 158,
         "gridWidth": 32,
-        "snap": false,
+        "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.5096
+        "zoomFactor": 0.524
       },
       "objectsGroups": [
         {
@@ -6188,8 +6236,8 @@
           "locked": false,
           "name": "Logo",
           "width": 824,
-          "x": 227,
-          "y": 44,
+          "x": 160,
+          "y": 59,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -6203,8 +6251,8 @@
           "locked": false,
           "name": "BtnSalir",
           "width": 283,
-          "x": 519,
-          "y": 470,
+          "x": 448,
+          "y": 480,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -6218,8 +6266,8 @@
           "locked": false,
           "name": "BtnJugar",
           "width": 283,
-          "x": 521,
-          "y": 236,
+          "x": 448,
+          "y": 256,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -6233,8 +6281,8 @@
           "locked": false,
           "name": "Fondo",
           "width": 1406,
-          "x": -52,
-          "y": -60,
+          "x": -96,
+          "y": -64,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -6648,7 +6696,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Botones mouse",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6735,7 +6783,7 @@
             },
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6844,7 +6892,7 @@
                           },
                           "parameters": [
                             "",
-                            "\"Instrucciones\"",
+                            "\"Nombrar\"",
                             ""
                           ],
                           "subInstructions": []
@@ -6931,626 +6979,6 @@
       ]
     },
     {
-      "b": 0,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "Introduccion",
-      "name": "Introduccion",
-      "oglFOV": 90,
-      "oglZFar": 500,
-      "oglZNear": 1,
-      "r": 0,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": false,
-      "title": "Introduccion",
-      "v": 0,
-      "uiSettings": {
-        "grid": false,
-        "gridB": 255,
-        "gridG": 180,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridR": 158,
-        "gridWidth": 32,
-        "snap": false,
-        "windowMask": false,
-        "zoomFactor": 0.5
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 430,
-          "layer": "Dialogos",
-          "locked": false,
-          "name": "txtDialogo",
-          "width": 1179,
-          "x": 50,
-          "y": 52,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "PresionaTecla",
-          "width": 0,
-          "x": 151,
-          "y": 564,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "name": "cuervo",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\Personajes\\Cuervo\\frente.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "CuadroTexto",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\cuadro dialogo.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "bold": true,
-          "italic": true,
-          "name": "txtDialogo",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "El caminó de un programador\n es duro y largo ...",
-          "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
-          "characterSize": 80,
-          "color": {
-            "b": 28,
-            "g": 231,
-            "r": 248
-          }
-        },
-        {
-          "bold": true,
-          "italic": true,
-          "name": "PresionaTecla",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Presiona Z para continuar ...\nPresiona X para regresar al menú  principal",
-          "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
-          "characterSize": 40,
-          "color": {
-            "b": 9,
-            "g": 9,
-            "r": 255
-          }
-        }
-      ],
-      "events": [
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Texto",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "PresionaTecla"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Timer"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "\"NextLine\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "PresionaTecla",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "Story",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Timer"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "\"NextLine\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "z"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "txtDialogo",
-                    "=",
-                    "\"Veamos si tienes lo necesario\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "Story",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"NextLine\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "PresionaTecla"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "Story",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Timer"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "\"NextLine\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "z"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "txtDialogo",
-                    "=",
-                    "\"Buena Suerte\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "Story",
-                    "=",
-                    "2"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"NextLine\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "PresionaTecla"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "Story",
-                    "=",
-                    "2"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Timer"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "\"NextLine\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "z"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Nombrar\"",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"NextLine\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Volver a menu pricipal :3",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "x"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Menu\"",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"NextLine\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        }
-      ],
-      "layers": [
-        {
-          "name": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": []
-        },
-        {
-          "name": "Dialogos",
-          "visibility": true,
-          "cameras": [],
-          "effects": []
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        }
-      ]
-    },
-    {
       "b": 209,
       "disableInputWhenNotFocused": true,
       "mangledName": "Nombrar",
@@ -7574,7 +7002,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.5512
+        "zoomFactor": 0.5752
       },
       "objectsGroups": [
         {
@@ -7630,7 +7058,7 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "tetnombrees",
+          "name": "txtnombrees",
           "width": 0,
           "x": 88,
           "y": 294,
@@ -7716,75 +7144,21 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 82,
           "layer": "",
           "locked": false,
-          "name": "PresionaTecla",
-          "width": 0,
-          "x": 116,
-          "y": 556,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "reintentar",
-          "width": 0,
-          "x": 99,
-          "y": 209,
-          "zOrder": 13,
+          "name": "Cuadrodialogo",
+          "width": 543,
+          "x": 453,
+          "y": 276,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         }
       ],
       "objects": [
-        {
-          "name": "Selector",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Selector",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\Selector.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           "name": "Fondo",
           "tags": "",
@@ -7827,25 +7201,6 @@
         {
           "bold": true,
           "italic": true,
-          "name": "PresionaTecla",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Presiona enter para continuar ...\n",
-          "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
-          "characterSize": 40,
-          "color": {
-            "b": 9,
-            "g": 9,
-            "r": 255
-          }
-        },
-        {
-          "bold": true,
-          "italic": true,
           "name": "txttitulo",
           "smoothed": true,
           "tags": "",
@@ -7872,7 +7227,7 @@
         {
           "bold": true,
           "italic": true,
-          "name": "tetnombrees",
+          "name": "txtnombrees",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -7995,25 +7350,6 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Instruccion",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "escribe tu nombre con  tu teclado y presion enter al finalizar",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
           "name": "btnReset",
           "tags": "",
           "type": "Sprite",
@@ -8080,25 +7416,6 @@
               ]
             }
           ]
-        },
-        {
-          "bold": true,
-          "italic": true,
-          "name": "reintentar",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Presiona x si deseas cambiar tu nombre",
-          "font": "",
-          "characterSize": 40,
-          "color": {
-            "b": 10,
-            "g": 10,
-            "r": 247
-          }
         }
       ],
       "events": [
@@ -8211,7 +7528,7 @@
                   "parameters": [
                     "NOMBRE",
                     "=",
-                    "InputName.String()"
+                    "SubStr(InputName.String(),0,10)\n"
                   ],
                   "subInstructions": []
                 }
@@ -8279,16 +7596,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "PresionaTecla"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "Montre"
                       },
                       "parameters": [
@@ -8328,17 +7635,6 @@
                         "presentacion",
                         "=",
                         "\"Mucho,gusto en conocerte \"+InputName.String()"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "reintentar",
-                        ""
                       ],
                       "subInstructions": []
                     }
@@ -8614,30 +7910,7 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreX"
-                  },
-                  "parameters": [
-                    "Selector",
-                    "=",
-                    "BtnVolver.X()+16"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "reintentar"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": []
             },
             {
@@ -8666,6 +7939,1358 @@
                   "parameters": [
                     "",
                     "\"Nombrar\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "ElegirPersonaje",
+      "name": "ElegirPersonaje",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": false,
+        "windowMask": false,
+        "zoomFactor": 0.5096
+      },
+      "objectsGroups": [
+        {
+          "name": "Botones",
+          "objects": [
+            {
+              "name": "BtnVolver"
+            },
+            {
+              "name": "Player1"
+            },
+            {
+              "name": "Player2"
+            },
+            {
+              "name": "Player3"
+            }
+          ]
+        },
+        {
+          "name": "Player",
+          "objects": [
+            {
+              "name": "Player1"
+            },
+            {
+              "name": "Player2"
+            },
+            {
+              "name": "Player3"
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 862,
+          "layer": "",
+          "locked": false,
+          "name": "Fondo",
+          "width": 1448,
+          "x": -78,
+          "y": -62,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 89,
+          "layer": "",
+          "locked": false,
+          "name": "TxtTitulo",
+          "width": 698,
+          "x": 304,
+          "y": 40,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 230,
+          "layer": "",
+          "locked": false,
+          "name": "Player1",
+          "width": 211,
+          "x": 114,
+          "y": 248,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 139,
+          "layer": "",
+          "locked": false,
+          "name": "BtnVolver",
+          "width": 201,
+          "x": 84,
+          "y": 562,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 230,
+          "layer": "",
+          "locked": false,
+          "name": "Player2",
+          "width": 211,
+          "x": 534,
+          "y": 246,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 230,
+          "layer": "",
+          "locked": false,
+          "name": "Player3",
+          "width": 211,
+          "x": 920,
+          "y": 248,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "name": "Fondo",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Recursos\\Fondos\\jose-ignacio-pompe-744075-unsplash.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": true,
+          "italic": true,
+          "name": "TxtTitulo",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Elige un personaje",
+          "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
+          "characterSize": 80,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      ],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Animacion inicial",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Fade",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MontreSouris"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "Fade",
+                    "<",
+                    "0.5"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Fade",
+                    "+",
+                    "0.2*TimeDelta()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "Botones",
+                    "=",
+                    "sin(Variable(Fade)*3.14159 )*255"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Botones",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Botones",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "Botones",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisBouton"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "Botones",
+                        "=",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "BtnVolver",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Nombrar\"",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "Player1",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarGlobalTxt"
+                          },
+                          "parameters": [
+                            "selectedCharacter",
+                            "=",
+                            "\"Player1\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Instrucciones\"",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "Player2",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarGlobalTxt"
+                          },
+                          "parameters": [
+                            "selectedCharacter",
+                            "=",
+                            "\"Player2\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Instrucciones\"",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "Player3",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarGlobalTxt"
+                          },
+                          "parameters": [
+                            "selectedCharacter",
+                            "=",
+                            "\"Player3\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Instrucciones\"",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Botones",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "Botones",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Botones",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Recursos\\Sonidos\\completetask_0.mp3",
+                    "1",
+                    "",
+                    "50",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Instrucciones",
+      "name": "Instrucciones",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": true,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 0.5
+      },
+      "objectsGroups": [
+        {
+          "name": "Botones",
+          "objects": [
+            {
+              "name": "BtnJugar"
+            },
+            {
+              "name": "BtnVolver"
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 776,
+          "layer": "",
+          "locked": false,
+          "name": "Fondo",
+          "width": 1338,
+          "x": -23,
+          "y": -25,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 86,
+          "layer": "",
+          "locked": false,
+          "name": "Instrucciones",
+          "width": 520,
+          "x": 416,
+          "y": 32,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 352,
+          "layer": "",
+          "locked": false,
+          "name": "descripcion",
+          "width": 928,
+          "x": 288,
+          "y": 192,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 155,
+          "layer": "",
+          "locked": false,
+          "name": "BtnVolver",
+          "width": 239,
+          "x": 32,
+          "y": 544,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 155,
+          "layer": "",
+          "locked": false,
+          "name": "BtnJugar",
+          "width": 239,
+          "x": 1024,
+          "y": 544,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "name": "Fondo",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Recursos\\Fondos\\jose-ignacio-pompe-744075-unsplash.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": true,
+          "italic": true,
+          "name": "Instrucciones",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Instrucciones",
+          "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
+          "characterSize": 80,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": false,
+          "italic": true,
+          "name": "descripcion",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "* Pulse las flechas para desplazar.\n* Utiliza el mouse para presionar \nlos botones de la ventana\n* Presiona la tecla I para \nocultar y mostrar el menú\n* Presiona z para interactuar\n\n",
+          "font": "Recursos\\Tipografias\\Germania_One\\GermaniaOne-Regular.ttf",
+          "characterSize": 50,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "name": "BtnJugar",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Recursos\\Botones\\btn jugar.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Recursos\\Botones\\btn jugar hover.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Animacion inicial",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Fade",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "Fade",
+                    "<",
+                    "0.5"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Fade",
+                    "+",
+                    "0.2*TimeDelta()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "BtnVolver",
+                    "=",
+                    "sin(Variable(Fade)*3.14159 )*255"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "BtnJugar",
+                    "=",
+                    "sin(Variable(Fade)*3.14159 )*255"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Botones",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Botones",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "Botones",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisBouton"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "Botones",
+                        "=",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "BtnJugar",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Mundos\"",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "BtnVolver",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Menu\"",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Botones",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "Botones",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Botones",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Recursos\\Sonidos\\completetask_0.mp3",
+                    "1",
+                    "",
+                    "50",
                     ""
                   ],
                   "subInstructions": []
@@ -9546,9 +10171,9 @@
         "gridOffsetY": 0,
         "gridR": 158,
         "gridWidth": 32,
-        "snap": false,
+        "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.644
+        "zoomFactor": 0.404
       },
       "objectsGroups": [
         {
@@ -9626,6 +10251,10 @@
               "name": "item4"
             }
           ]
+        },
+        {
+          "name": "Respuestas",
+          "objects": []
         }
       ],
       "variables": [],
@@ -11984,6 +12613,126 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 747,
+          "layer": "preguntas",
+          "locked": false,
+          "name": "FondoAzul",
+          "width": 1341,
+          "x": -44,
+          "y": -16,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Moneda",
+          "width": 0,
+          "x": 293.581,
+          "y": -226.634,
+          "zOrder": 160,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Moneda",
+          "width": 0,
+          "x": 1.50217,
+          "y": -825.644,
+          "zOrder": 161,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Moneda",
+          "width": 0,
+          "x": 872.789,
+          "y": -875.148,
+          "zOrder": 162,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Moneda",
+          "width": 0,
+          "x": -1156.91,
+          "y": -320.693,
+          "zOrder": 163,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 79,
+          "layer": "preguntas",
+          "locked": false,
+          "name": "Pregunta",
+          "width": 778,
+          "x": 246,
+          "y": 37,
+          "zOrder": 165,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 112,
+          "layer": "preguntas",
+          "locked": false,
+          "name": "RepuestaCorrecta",
+          "width": 1048,
+          "x": 134,
+          "y": 239,
+          "zOrder": 166,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 169,
+          "layer": "preguntas",
+          "locked": false,
+          "name": "RespuestaIncorrecta",
+          "width": 1038,
+          "x": 124,
+          "y": 407,
+          "zOrder": 167,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -12618,6 +13367,160 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "name": "FondoAzul",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Recursos\\Fondos\\fondoazul.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "NewObject3",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Preguntas",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 249,
+            "g": 249,
+            "r": 249
+          }
+        },
+        {
+          "name": "FondoNegro",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Recursos\\Fondos\\Fondo negro.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "Pregunta",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "¿Esta es la pregunta numero 1?",
+          "font": "",
+          "characterSize": 50,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "RepuestaCorrecta",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Esta es la respueta correcta",
+          "font": "",
+          "characterSize": 35,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "RespuestaIncorrecta",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Respuesta Incorrecta",
+          "font": "",
+          "characterSize": 35,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "events": [
@@ -12899,7 +13802,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "PruebaDialogo",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13205,17 +14108,11 @@
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
           },
-          "comment": "",
-          "comment2": ""
+          "target": "Vida"
         },
         {
           "disabled": false,
@@ -13224,7 +14121,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "Vida"
+          "target": "FPreguntasCoin"
         }
       ],
       "layers": [
@@ -13268,652 +14165,11 @@
           "visibility": true,
           "cameras": [],
           "effects": []
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        }
-      ]
-    },
-    {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "Instrucciones",
-      "name": "Instrucciones",
-      "oglFOV": 90,
-      "oglZFar": 500,
-      "oglZNear": 1,
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": true,
-        "gridB": 255,
-        "gridG": 180,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridR": 158,
-        "gridWidth": 32,
-        "snap": true,
-        "windowMask": false,
-        "zoomFactor": 0.5
-      },
-      "objectsGroups": [
-        {
-          "name": "Botones",
-          "objects": [
-            {
-              "name": "BtnJugar"
-            },
-            {
-              "name": "BtnVolver"
-            }
-          ]
-        }
-      ],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 776,
-          "layer": "",
-          "locked": false,
-          "name": "Fondo",
-          "width": 1338,
-          "x": -23,
-          "y": -25,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
-          "angle": 0,
-          "customSize": true,
-          "height": 86,
-          "layer": "",
-          "locked": false,
-          "name": "Instrucciones",
-          "width": 520,
-          "x": 416,
-          "y": 32,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 352,
-          "layer": "",
-          "locked": false,
-          "name": "descripcion",
-          "width": 928,
-          "x": 288,
-          "y": 192,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 155,
-          "layer": "",
-          "locked": false,
-          "name": "BtnVolver",
-          "width": 239,
-          "x": 32,
-          "y": 544,
-          "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 155,
-          "layer": "",
-          "locked": false,
-          "name": "BtnJugar",
-          "width": 239,
-          "x": 1024,
-          "y": 544,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "name": "Fondo",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\Fondos\\jose-ignacio-pompe-744075-unsplash.jpg",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "bold": true,
-          "italic": true,
-          "name": "Instrucciones",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Instrucciones",
-          "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
-          "characterSize": 80,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "bold": false,
-          "italic": true,
-          "name": "descripcion",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "* Pulse las flechas para desplazar.\n* Utiliza el mouse para presionar \nlos botones de la ventana\n* Presiona la tecla I para \nocultar y mostrar el menú\n* Presiona z para interactuar\n\n",
-          "font": "Recursos\\Tipografias\\Germania_One\\GermaniaOne-Regular.ttf",
-          "characterSize": 50,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "name": "BtnJugar",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\Botones\\btn jugar.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\Botones\\btn jugar hover.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "events": [
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Animacion inicial",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "Fade",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "Fade",
-                    "<",
-                    "0.5"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "Fade",
-                    "+",
-                    "0.2*TimeDelta()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Opacity"
-                  },
-                  "parameters": [
-                    "BtnVolver",
-                    "=",
-                    "sin(Variable(Fade)*3.14159 )*255"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Opacity"
-                  },
-                  "parameters": [
-                    "BtnJugar",
-                    "=",
-                    "sin(Variable(Fade)*3.14159 )*255"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Botones",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "Botones",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "Botones",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SourisBouton"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ChangeAnimation"
-                      },
-                      "parameters": [
-                        "Botones",
-                        "=",
-                        "2"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "MouseButtonReleased"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SourisSurObjet"
-                          },
-                          "parameters": [
-                            "BtnJugar",
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Introduccion\"",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SourisSurObjet"
-                          },
-                          "parameters": [
-                            "BtnVolver",
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Menu\"",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "Botones",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "Botones",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "Botones",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "PlaySoundCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "Recursos\\Sonidos\\completetask_0.mp3",
-                    "1",
-                    "",
-                    "50",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        }
-      ],
-      "layers": [
-        {
-          "name": "",
+          "name": "preguntas",
           "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
+          "cameras": [],
           "effects": []
         }
       ],
@@ -15789,711 +16045,6 @@
           "name": "Inventario",
           "visibility": true,
           "cameras": [],
-          "effects": []
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        }
-      ]
-    },
-    {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "ElegirPersonaje",
-      "name": "ElegirPersonaje",
-      "oglFOV": 90,
-      "oglZFar": 500,
-      "oglZNear": 1,
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": false,
-        "gridB": 255,
-        "gridG": 180,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridR": 158,
-        "gridWidth": 32,
-        "snap": false,
-        "windowMask": false,
-        "zoomFactor": 0.5096
-      },
-      "objectsGroups": [
-        {
-          "name": "Botones",
-          "objects": [
-            {
-              "name": "BtnVolver"
-            },
-            {
-              "name": "Player1"
-            },
-            {
-              "name": "Player2"
-            },
-            {
-              "name": "Player3"
-            }
-          ]
-        },
-        {
-          "name": "Player",
-          "objects": [
-            {
-              "name": "Player1"
-            },
-            {
-              "name": "Player2"
-            },
-            {
-              "name": "Player3"
-            }
-          ]
-        }
-      ],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 862,
-          "layer": "",
-          "locked": false,
-          "name": "Fondo",
-          "width": 1448,
-          "x": -78,
-          "y": -62,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 89,
-          "layer": "",
-          "locked": false,
-          "name": "TxtTitulo",
-          "width": 698,
-          "x": 304,
-          "y": 40,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 230,
-          "layer": "",
-          "locked": false,
-          "name": "Player1",
-          "width": 211,
-          "x": 114,
-          "y": 248,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 139,
-          "layer": "",
-          "locked": false,
-          "name": "BtnVolver",
-          "width": 201,
-          "x": 84,
-          "y": 562,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 230,
-          "layer": "",
-          "locked": false,
-          "name": "Player2",
-          "width": 211,
-          "x": 534,
-          "y": 246,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 230,
-          "layer": "",
-          "locked": false,
-          "name": "Player3",
-          "width": 211,
-          "x": 920,
-          "y": 248,
-          "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "name": "Fondo",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\Fondos\\jose-ignacio-pompe-744075-unsplash.jpg",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "bold": true,
-          "italic": true,
-          "name": "TxtTitulo",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Elige un personaje",
-          "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
-          "characterSize": 80,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        }
-      ],
-      "events": [
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Animacion inicial",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "Fade",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MontreSouris"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "Fade",
-                    "<",
-                    "0.5"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "Fade",
-                    "+",
-                    "0.2*TimeDelta()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Opacity"
-                  },
-                  "parameters": [
-                    "Botones",
-                    "=",
-                    "sin(Variable(Fade)*3.14159 )*255"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": true,
-          "name": "Botones",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "Botones",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "Botones",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SourisBouton"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ChangeAnimation"
-                      },
-                      "parameters": [
-                        "Botones",
-                        "=",
-                        "2"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "MouseButtonReleased"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SourisSurObjet"
-                          },
-                          "parameters": [
-                            "BtnVolver",
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Nombrar\"",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SourisSurObjet"
-                          },
-                          "parameters": [
-                            "Player1",
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarGlobalTxt"
-                          },
-                          "parameters": [
-                            "selectedCharacter",
-                            "=",
-                            "\"Player1\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Mundos\"",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SourisSurObjet"
-                          },
-                          "parameters": [
-                            "Player2",
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarGlobalTxt"
-                          },
-                          "parameters": [
-                            "selectedCharacter",
-                            "=",
-                            "\"Player2\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Mundos\"",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "SourisSurObjet"
-                          },
-                          "parameters": [
-                            "Player3",
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarGlobalTxt"
-                          },
-                          "parameters": [
-                            "selectedCharacter",
-                            "=",
-                            "\"Player3\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Mundos\"",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "Botones",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "Botones",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "Botones",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "PlaySoundCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "Recursos\\Sonidos\\completetask_0.mp3",
-                    "1",
-                    "",
-                    "50",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
-        }
-      ],
-      "layers": [
-        {
-          "name": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
           "effects": []
         }
       ],
@@ -19242,7 +18793,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Monedas",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22169,6 +21720,822 @@
                 "BarraSalud",
                 "=",
                 "JUGADOR.Variable(vida)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
+    },
+    {
+      "associatedLayout": "bienestar",
+      "lastChangeTimeStamp": 0,
+      "name": "FPreguntasCoin",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "JUGADOR",
+                "Moneda",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "ContadorMonedas",
+                "+",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"preguntas\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": true,
+          "name": "Cambiar texto preguntas y respuestas",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"Esta es la pregunta uno \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrecta",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Esta respuesta es incorrecta \""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"Esta es la pregunta uno \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrecta",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Esta respuesta es incorrecta \""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "3"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"Esta es la pregunta uno \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrecta",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Esta respuesta es incorrecta \""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "4"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"Esta es la pregunta uno \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrecta",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Esta respuesta es incorrecta \""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "5"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"Esta es la pregunta uno \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrecta",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Esta respuesta es incorrecta \""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "6"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"Esta es la pregunta uno \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrecta",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Esta respuesta es incorrecta \""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "7"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"Esta es la pregunta uno \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrecta",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Esta respuesta es incorrecta \""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "8"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"Esta es la pregunta uno \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrecta",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Esta respuesta es incorrecta \""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "9"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"Esta es la pregunta uno \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrecta",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Esta respuesta es incorrecta \""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "10"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"Esta es la pregunta uno \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrecta",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Esta respuesta es incorrecta \""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Respuestas",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::ChangeColor"
+              },
+              "parameters": [
+                "Respuestas",
+                "\"242;248;101\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "RespuestaIncorrecta",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "JUGADOR",
+                        "vida",
+                        "-",
+                        "2\n"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"preguntas\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "RepuestaCorrecta",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"preguntas\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Respuestas",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::ChangeColor"
+              },
+              "parameters": [
+                "Respuestas",
+                "\"255;255;255\""
               ],
               "subInstructions": []
             }
