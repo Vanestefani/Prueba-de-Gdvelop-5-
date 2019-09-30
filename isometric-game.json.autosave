@@ -5937,6 +5937,265 @@
           ]
         }
       ]
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "Pregunta",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "¿Esta es la pregunta numero 1?",
+      "font": "",
+      "characterSize": 50,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "RepuestaCorrecta",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Esta es la respueta correcta",
+      "font": "",
+      "characterSize": 35,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "RespuestaIncorrectaUNO",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Respuesta Incorrecta",
+      "font": "",
+      "characterSize": 35,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "RespuestaIncorrectaDOS",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "ESTA RESPUESTA EN INCORRECTA",
+      "font": "",
+      "characterSize": 35,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "additive": false,
+      "alphaParam": "Mutable",
+      "angleParam": "Mutable",
+      "blueParam": "Random",
+      "destroyWhenNoParticles": true,
+      "emissionEditionSimpleMode": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 85,
+      "emitterForceMin": 45,
+      "emitterXDirection": 0,
+      "emitterYDirection": 1,
+      "emitterZDirection": 0,
+      "flow": 45,
+      "friction": 2,
+      "gravityEditionSimpleMode": true,
+      "greenParam": "Random",
+      "maxParticleNb": 25,
+      "name": "ParticulaEstrella",
+      "particleAlpha1": 204,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 15,
+      "particleAngle2": 30,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 253,
+      "particleBlue2": 253,
+      "particleEditionSimpleMode": true,
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGravityZ": 0,
+      "particleGreen1": 253,
+      "particleGreen2": 253,
+      "particleLifeTimeMax": 1.5,
+      "particleLifeTimeMin": 0.5,
+      "particleRed1": 253,
+      "particleRed2": 253,
+      "particleSize1": 1,
+      "particleSize2": 100,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "redParam": "Enabled",
+      "rendererParam1": 3,
+      "rendererParam2": 1,
+      "rendererType": "Quad",
+      "sizeParam": "Mutable",
+      "tags": "",
+      "tank": 24,
+      "textureParticleName": "Recursos\\items\\eSTRLLA.png",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 3,
+      "variables": [],
+      "behaviors": []
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "statusRespuesta",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Respuesta correcta",
+      "font": "",
+      "characterSize": 20,
+      "color": {
+        "b": 85,
+        "g": 239,
+        "r": 252
+      }
+    },
+    {
+      "name": "FondoAzul",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Recursos\\Fondos\\fondoazul.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "botonPlay",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Recursos\\Botones\\btn play.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Recursos\\Botones\\btn play hover.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [],
@@ -5955,7 +6214,7 @@
     },
     {
       "name": "just_unpaused",
-      "value": ""
+      "value": "1"
     }
   ],
   "layouts": [
@@ -10325,7 +10584,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.572
+        "zoomFactor": 0.5
       },
       "objectsGroups": [
         {
@@ -10406,7 +10665,17 @@
         },
         {
           "name": "Respuestas",
-          "objects": []
+          "objects": [
+            {
+              "name": "RespuestaIncorrectaUNO"
+            },
+            {
+              "name": "RepuestaCorrecta"
+            },
+            {
+              "name": "RespuestaIncorrectaDOS"
+            }
+          ]
         }
       ],
       "variables": [],
@@ -12864,8 +13133,8 @@
           "locked": false,
           "name": "RepuestaCorrecta",
           "width": 1048,
-          "x": 134,
-          "y": 239,
+          "x": 118,
+          "y": 244,
           "zOrder": 166,
           "numberProperties": [],
           "stringProperties": [],
@@ -12877,11 +13146,71 @@
           "height": 169,
           "layer": "preguntas",
           "locked": false,
-          "name": "RespuestaIncorrecta",
+          "name": "RespuestaIncorrectaUNO",
           "width": 1038,
           "x": 124,
           "y": 407,
           "zOrder": 167,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "preguntas",
+          "locked": false,
+          "name": "RespuestaIncorrectaDOS",
+          "width": 0,
+          "x": 111,
+          "y": 531,
+          "zOrder": 168,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 175,
+          "layer": "RESULTADORespue",
+          "locked": false,
+          "name": "statusRespuesta",
+          "width": 546,
+          "x": 375,
+          "y": 147,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 707,
+          "layer": "RESULTADORespue",
+          "locked": false,
+          "name": "FondoAzul",
+          "width": 1196,
+          "x": 1,
+          "y": -1,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 182,
+          "layer": "RESULTADORespue",
+          "locked": false,
+          "name": "botonPlay",
+          "width": 318,
+          "x": 450,
+          "y": 436,
+          "zOrder": 171,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13514,160 +13843,6 @@
           "string": "|",
           "font": "",
           "characterSize": 25,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "name": "FondoAzul",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\cuadro dialogo.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "NewObject3",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Preguntas",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 249,
-            "g": 249,
-            "r": 249
-          }
-        },
-        {
-          "name": "FondoNegro",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\Fondos\\Fondo negro.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "bold": true,
-          "italic": false,
-          "name": "Pregunta",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "¿Esta es la pregunta numero 1?",
-          "font": "",
-          "characterSize": 50,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "RepuestaCorrecta",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Esta es la respueta correcta",
-          "font": "",
-          "characterSize": 35,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "RespuestaIncorrecta",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Respuesta Incorrecta",
-          "font": "",
-          "characterSize": 35,
           "color": {
             "b": 255,
             "g": 255,
@@ -14320,7 +14495,13 @@
         },
         {
           "name": "preguntas",
-          "visibility": true,
+          "visibility": false,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "RESULTADORespue",
+          "visibility": false,
           "cameras": [],
           "effects": []
         }
@@ -21841,135 +22022,43 @@
       "name": "FPreguntasCoin",
       "events": [
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Juego en pausa",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "just_unpaused",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "al tocal moneda que aparescan ventana de preguntas",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "JUGADOR",
-                "Moneda",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "ContadorMonedas",
-                "+",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ShowLayer"
-              },
-              "parameters": [
-                "",
-                "\"preguntas\""
-              ],
-              "subInstructions": []
-            }
-          ],
+          "name": "Pausa juego y mostrar preguntas",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
               "disabled": false,
               "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "VARIABLE EN NO PAUSA pausa",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarGlobal"
+                    "value": "DepartScene"
                   },
                   "parameters": [
-                    "just_unpaused",
-                    "=",
-                    "0"
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -21978,11 +22067,82 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ChangeTimeScale"
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "just_unpaused",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "al tocal moneda que aparescan ventana de preguntas y se pause escenario de fondo",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "JUGADOR",
+                    "Moneda",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ShowLayer"
                   },
                   "parameters": [
                     "",
-                    "1"
+                    "\"preguntas\""
                   ],
                   "subInstructions": []
                 }
@@ -22015,6 +22175,39 @@
                   },
                   "parameters": [
                     "",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "just_unpaused",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeTimeScale"
+                  },
+                  "parameters": [
+                    "",
                     "0"
                   ],
                   "subInstructions": []
@@ -22022,7 +22215,8 @@
               ],
               "events": []
             }
-          ]
+          ],
+          "parameters": []
         },
         {
           "colorB": 228,
@@ -22072,7 +22266,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22087,6 +22281,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22130,7 +22336,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22145,6 +22351,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22188,7 +22406,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22203,6 +22421,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22246,7 +22476,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22261,6 +22491,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22304,7 +22546,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22319,6 +22561,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22362,7 +22616,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22377,6 +22631,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22420,7 +22686,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22435,6 +22701,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22478,7 +22756,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22493,6 +22771,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22536,7 +22826,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22551,6 +22841,18 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es \ncorrecta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
                   ],
                   "subInstructions": []
                 }
@@ -22594,7 +22896,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "RespuestaIncorrecta",
+                    "RespuestaIncorrectaUNO",
                     "=",
                     "\"Esta respuesta es  incorrecta \""
                   ],
@@ -22609,6 +22911,566 @@
                     "RepuestaCorrecta",
                     "=",
                     "\"Esta respuesta es correcta \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Esta respuesta es  incorrecta \""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "RESPUESTAS",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "cambiar de  color",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Respuestas",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::ChangeColor"
+                  },
+                  "parameters": [
+                    "Respuestas",
+                    "\"248;231;28\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Respuestas",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::ChangeColor"
+                  },
+                  "parameters": [
+                    "Respuestas",
+                    "\"255;255;255\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "eleccion de respuesta",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "Exp",
+                        "+",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "ParticulaEstrella",
+                        "RepuestaCorrecta.X()",
+                        "RepuestaCorrecta.Y()",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "ParticulaEstrella",
+                        "=",
+                        "100"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ShowLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"RESULTADORespue\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TextObject::String"
+                          },
+                          "parameters": [
+                            "statusRespuesta",
+                            "=",
+                            "\"Felicidades, Haz respondido correctamente\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "JUGADOR",
+                        "vida",
+                        "-",
+                        "2\n"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ShowLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"RESULTADORespue\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TextObject::String"
+                          },
+                          "parameters": [
+                            "statusRespuesta",
+                            "=",
+                            "\" Haz respondido incorrectamente\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "JUGADOR",
+                        "vida",
+                        "-",
+                        "2\n"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ShowLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"RESULTADORespue\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TextObject::String"
+                          },
+                          "parameters": [
+                            "statusRespuesta",
+                            "=",
+                            "\" Haz respondido incorrectamente\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Boton continuar",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "botonPlay",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "botonPlay",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "just_unpaused",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"RESULTADORespue\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"preguntas\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "botonPlay",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "botonPlay",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 }
