@@ -5950,7 +5950,7 @@
       "behaviors": [],
       "string": "¿Esta es la pregunta numero 1?",
       "font": "",
-      "characterSize": 50,
+      "characterSize": 45,
       "color": {
         "b": 255,
         "g": 255,
@@ -6196,6 +6196,123 @@
           ]
         }
       ]
+    },
+    {
+      "name": "placeR3",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Recursos\\Selector.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "placeR2",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Recursos\\Selector.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "placeR1",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Recursos\\Selector.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [],
@@ -6215,6 +6332,10 @@
     {
       "name": "just_unpaused",
       "value": "1"
+    },
+    {
+      "name": "LifeJugador",
+      "value": ""
     }
   ],
   "layouts": [
@@ -6242,7 +6363,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.524
+        "zoomFactor": 0.404
       },
       "objectsGroups": [],
       "variables": [],
@@ -10582,9 +10703,9 @@
         "gridOffsetY": 0,
         "gridR": 158,
         "gridWidth": 32,
-        "snap": true,
+        "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.5
+        "zoomFactor": 0.308
       },
       "objectsGroups": [
         {
@@ -11479,21 +11600,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -957,
-          "y": -66,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
           "layer": "GUI",
           "locked": false,
           "name": "TxtPuntos",
@@ -12023,23 +12129,8 @@
           "locked": false,
           "name": "Moneda",
           "width": 0,
-          "x": -761,
-          "y": -36,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -836.67,
-          "y": -585.76,
+          "x": -864,
+          "y": -896,
           "zOrder": 87,
           "numberProperties": [],
           "stringProperties": [],
@@ -13058,8 +13149,8 @@
           "locked": false,
           "name": "Moneda",
           "width": 0,
-          "x": 293.581,
-          "y": -226.634,
+          "x": -864,
+          "y": -96,
           "zOrder": 160,
           "numberProperties": [],
           "stringProperties": [],
@@ -13067,59 +13158,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 1.50217,
-          "y": -825.644,
-          "zOrder": 161,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 872.789,
-          "y": -875.148,
-          "zOrder": 162,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -1156.91,
-          "y": -320.693,
-          "zOrder": 163,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
-          "height": 79,
+          "height": 177,
           "layer": "preguntas",
           "locked": false,
           "name": "Pregunta",
-          "width": 778,
-          "x": 246,
-          "y": 37,
+          "width": 1138,
+          "x": 28,
+          "y": 35,
           "zOrder": 165,
           "numberProperties": [],
           "stringProperties": [],
@@ -13133,8 +13179,8 @@
           "locked": false,
           "name": "RepuestaCorrecta",
           "width": 1048,
-          "x": 118,
-          "y": 244,
+          "x": 88,
+          "y": 254,
           "zOrder": 166,
           "numberProperties": [],
           "stringProperties": [],
@@ -13148,8 +13194,8 @@
           "locked": false,
           "name": "RespuestaIncorrectaUNO",
           "width": 1038,
-          "x": 124,
-          "y": 407,
+          "x": 32,
+          "y": 384,
           "zOrder": 167,
           "numberProperties": [],
           "stringProperties": [],
@@ -13163,8 +13209,8 @@
           "locked": false,
           "name": "RespuestaIncorrectaDOS",
           "width": 0,
-          "x": 111,
-          "y": 531,
+          "x": 32,
+          "y": 512,
           "zOrder": 168,
           "numberProperties": [],
           "stringProperties": [],
@@ -13211,6 +13257,51 @@
           "x": 450,
           "y": 436,
           "zOrder": 171,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "preguntas",
+          "locked": false,
+          "name": "placeR1",
+          "width": 0,
+          "x": 64,
+          "y": 256,
+          "zOrder": 172,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "preguntas",
+          "locked": false,
+          "name": "placeR2",
+          "width": 0,
+          "x": 64,
+          "y": 384,
+          "zOrder": 173,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "preguntas",
+          "locked": false,
+          "name": "placeR3",
+          "width": 0,
+          "x": 64,
+          "y": 512,
+          "zOrder": 174,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -21900,13 +21991,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarObjet"
+                "value": "ModVarGlobal"
               },
               "parameters": [
-                "JUGADOR",
-                "vida",
+                "LifeJugador",
                 "=",
-                "10\n"
+                "10"
               ],
               "subInstructions": []
             }
@@ -21944,54 +22034,51 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarObjet"
+                "value": "ModVarGlobal"
               },
               "parameters": [
-                "JUGADOR",
-                "vida",
+                "LifeJugador",
                 "-",
-                "2\n"
+                "2"
               ],
               "subInstructions": []
             }
           ],
-          "events": [
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "JUGADOR",
-                    "vida",
-                    "<",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "LifeJugador",
+                "<=",
+                "0"
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"GameOver\"",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
+              "subInstructions": []
             }
-          ]
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"GameOver\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         },
         {
           "disabled": false,
@@ -22007,7 +22094,7 @@
               "parameters": [
                 "BarraSalud",
                 "=",
-                "JUGADOR.Variable(vida)"
+                "GlobalVariable(LifeJugador)"
               ],
               "subInstructions": []
             }
@@ -22027,7 +22114,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Pausa juego y mostrar preguntas",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22224,7 +22311,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Cambiar texto preguntas y respuestas",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22256,7 +22343,7 @@
                   "parameters": [
                     "Pregunta",
                     "=",
-                    "\"Esta es la pregunta uno \""
+                    "\"¿Qué es la herencia? \""
                   ],
                   "subInstructions": []
                 },
@@ -22268,7 +22355,21 @@
                   "parameters": [
                     "RespuestaIncorrectaUNO",
                     "=",
-                    "\"Esta respuesta es  incorrecta \""
+                    "\"En la trasmisión de datos entre un variable y otra. \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
                   ],
                   "subInstructions": []
                 },
@@ -22280,7 +22381,35 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es correcta \""
+                    "\"Herencia es la transmisión del código entre unas clases y otras.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
                   ],
                   "subInstructions": []
                 },
@@ -22292,7 +22421,7 @@
                   "parameters": [
                     "RespuestaIncorrectaDOS",
                     "=",
-                    "\"Esta respuesta es  incorrecta \""
+                    "\"Heredar datos de un código fuente. \""
                   ],
                   "subInstructions": []
                 }
@@ -22326,7 +22455,7 @@
                   "parameters": [
                     "Pregunta",
                     "=",
-                    "\"Esta es la pregunta dos\""
+                    "\"¿Qué es polimorfismo?\""
                   ],
                   "subInstructions": []
                 },
@@ -22338,7 +22467,7 @@
                   "parameters": [
                     "RespuestaIncorrectaUNO",
                     "=",
-                    "\"Esta respuesta es  incorrecta \""
+                    "\"Un Objeto en la programación. \"\n"
                   ],
                   "subInstructions": []
                 },
@@ -22350,7 +22479,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es correcta \""
+                    "\"Propiedad por la que es posible enviar mensajes sintácticamente iguales a objetos de tipos distintos.\""
                   ],
                   "subInstructions": []
                 },
@@ -22362,7 +22491,49 @@
                   "parameters": [
                     "RespuestaIncorrectaDOS",
                     "=",
-                    "\"Esta respuesta es  incorrecta \""
+                    "\"Propiedad de usar varias clases al mismo tiempo \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
                   ],
                   "subInstructions": []
                 }
@@ -22396,7 +22567,7 @@
                   "parameters": [
                     "Pregunta",
                     "=",
-                    "\"Esta es la pregunta tres \""
+                    "\"¿Cuáles características se deben reunir para decir que hablamos de programación orientada a objetos?\""
                   ],
                   "subInstructions": []
                 },
@@ -22408,7 +22579,7 @@
                   "parameters": [
                     "RespuestaIncorrectaUNO",
                     "=",
-                    "\"Esta respuesta es  incorrecta \""
+                    "\"Entendible, claridad, objetividad.\n\""
                   ],
                   "subInstructions": []
                 },
@@ -22420,7 +22591,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es correcta \""
+                    "\"Abstracción, encapsulación, herencia y polimorfismo; y los conceptos básicos que las forman: objetos, mensajes, clases, instancias y métodos\""
                   ],
                   "subInstructions": []
                 },
@@ -22432,7 +22603,49 @@
                   "parameters": [
                     "RespuestaIncorrectaDOS",
                     "=",
-                    "\"Esta respuesta es  incorrecta \""
+                    "\"Abstracción, encapsulación, herencia y polimorfismo. \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
                   ],
                   "subInstructions": []
                 }
@@ -22466,7 +22679,7 @@
                   "parameters": [
                     "Pregunta",
                     "=",
-                    "\"Esta es la pregunta cuatro\""
+                    "\"¿Para qué sirve la programación?\n\""
                   ],
                   "subInstructions": []
                 },
@@ -22478,7 +22691,7 @@
                   "parameters": [
                     "RespuestaIncorrectaUNO",
                     "=",
-                    "\"Esta respuesta es  incorrecta \""
+                    "\"Para organizar ideas ejecutables.\""
                   ],
                   "subInstructions": []
                 },
@@ -22490,7 +22703,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es correcta \""
+                    "\"Se utiliza para idear y ordenar las acciones que se realizarán en el marco de un proyecto.\n\""
                   ],
                   "subInstructions": []
                 },
@@ -22502,7 +22715,49 @@
                   "parameters": [
                     "RespuestaIncorrectaDOS",
                     "=",
-                    "\"Esta respuesta es  incorrecta \""
+                    "\"Para gestionar ideas en un computador.\n \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
                   ],
                   "subInstructions": []
                 }
@@ -22536,7 +22791,7 @@
                   "parameters": [
                     "Pregunta",
                     "=",
-                    "\"Esta es la pregunta cinco\""
+                    "\"¿Que es programación?\""
                   ],
                   "subInstructions": []
                 },
@@ -22548,7 +22803,7 @@
                   "parameters": [
                     "RespuestaIncorrectaUNO",
                     "=",
-                    "\"Esta respuesta es  incorrecta \""
+                    "\"Programación es la acción de programar una agenda que implica ordenar, estructurar o componer una serie de acciones cronológicas para cumplir un objetivo.\n \""
                   ],
                   "subInstructions": []
                 },
@@ -22560,7 +22815,7 @@
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es correcta \""
+                    "\"Es una forma especial de programar, más cercana a como expresaríamos las cosas en la vida real que otros tipos de programación.\n\""
                   ],
                   "subInstructions": []
                 },
@@ -22572,357 +22827,49 @@
                   "parameters": [
                     "RespuestaIncorrectaDOS",
                     "=",
-                    "\"Esta respuesta es  incorrecta \""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "ContadorMonedas",
-                    "=",
-                    "6"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Pregunta",
-                    "=",
-                    "\"Esta es la pregunta seis \""
+                    "\"Programar un objeto que cumple caracteriticas.\""
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "TextObject::String"
+                    "value": "MettreXY"
                   },
                   "parameters": [
                     "RespuestaIncorrectaUNO",
                     "=",
-                    "\"Esta respuesta es  incorrecta \""
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "TextObject::String"
+                    "value": "MettreXY"
                   },
                   "parameters": [
                     "RepuestaCorrecta",
                     "=",
-                    "\"Esta respuesta es correcta \""
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "TextObject::String"
+                    "value": "MettreXY"
                   },
                   "parameters": [
                     "RespuestaIncorrectaDOS",
                     "=",
-                    "\"Esta respuesta es  incorrecta \""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "ContadorMonedas",
+                    "placeR2.X()",
                     "=",
-                    "7"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Pregunta",
-                    "=",
-                    "\"Esta es la pregunta siete\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaUNO",
-                    "=",
-                    "\"Esta respuesta es  incorrecta \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RepuestaCorrecta",
-                    "=",
-                    "\"Esta respuesta es correcta \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaDOS",
-                    "=",
-                    "\"Esta respuesta es  incorrecta \""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "ContadorMonedas",
-                    "=",
-                    "8"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Pregunta",
-                    "=",
-                    "\"Esta es la pregunta ocho \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaUNO",
-                    "=",
-                    "\"Esta respuesta es  incorrecta \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RepuestaCorrecta",
-                    "=",
-                    "\"Esta respuesta es correcta \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaDOS",
-                    "=",
-                    "\"Esta respuesta es  incorrecta \""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "ContadorMonedas",
-                    "=",
-                    "9"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Pregunta",
-                    "=",
-                    "\"Esta es la pregunta nueve \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaUNO",
-                    "=",
-                    "\"Esta respuesta es  incorrecta \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RepuestaCorrecta",
-                    "=",
-                    "\"Esta respuesta es \ncorrecta \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaDOS",
-                    "=",
-                    "\"Esta respuesta es  incorrecta \""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "ContadorMonedas",
-                    "=",
-                    "10"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Pregunta",
-                    "=",
-                    "\"Esta es la pregunta diez\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaUNO",
-                    "=",
-                    "\"Esta respuesta es  incorrecta \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RepuestaCorrecta",
-                    "=",
-                    "\"Esta respuesta es correcta \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaDOS",
-                    "=",
-                    "\"Esta respuesta es  incorrecta \""
+                    "placeR2.Y()"
                   ],
                   "subInstructions": []
                 }
@@ -23077,6 +23024,14 @@
                         "Left"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
                     }
                   ],
                   "actions": [
@@ -23158,7 +23113,7 @@
             },
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -23192,19 +23147,26 @@
                         "Left"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
                     }
                   ],
                   "actions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ModVarObjet"
+                        "value": "ModVarGlobal"
                       },
                       "parameters": [
-                        "JUGADOR",
-                        "vida",
+                        "LifeJugador",
                         "-",
-                        "2\n"
+                        "2"
                       ],
                       "subInstructions": []
                     }
@@ -23248,7 +23210,7 @@
             },
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -23282,19 +23244,26 @@
                         "Left"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
                     }
                   ],
                   "actions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ModVarObjet"
+                        "value": "ModVarGlobal"
                       },
                       "parameters": [
-                        "JUGADOR",
-                        "vida",
+                        "LifeJugador",
                         "-",
-                        "2\n"
+                        "2"
                       ],
                       "subInstructions": []
                     }
@@ -23479,6 +23448,35 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "placeR1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "placeR2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ]
     }
