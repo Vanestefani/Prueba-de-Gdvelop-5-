@@ -6363,7 +6363,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.404
+        "zoomFactor": 0.644
       },
       "objectsGroups": [],
       "variables": [],
@@ -6376,8 +6376,8 @@
           "locked": false,
           "name": "Logo",
           "width": 1024,
-          "x": 90,
-          "y": 271,
+          "x": 92,
+          "y": 269,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -7928,7 +7928,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Entrada de texto",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8095,7 +8095,7 @@
                       "parameters": [
                         "NombreJugador",
                         "=",
-                        "SubStr(InputName.String(),0,6)"
+                        "SubStr(InputName.String(),0,10)"
                       ],
                       "subInstructions": []
                     }
@@ -9588,7 +9588,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Botones",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9704,7 +9704,7 @@
                           },
                           "parameters": [
                             "",
-                            "\"Mundos\"",
+                            "\"bienestar\"",
                             ""
                           ],
                           "subInstructions": []
@@ -10705,7 +10705,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.308
+        "zoomFactor": 0.404
       },
       "objectsGroups": [
         {

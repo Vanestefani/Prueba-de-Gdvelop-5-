@@ -6363,7 +6363,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.404
+        "zoomFactor": 0.644
       },
       "objectsGroups": [],
       "variables": [],
@@ -6376,8 +6376,8 @@
           "locked": false,
           "name": "Logo",
           "width": 1024,
-          "x": 90,
-          "y": 271,
+          "x": 92,
+          "y": 269,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -9588,7 +9588,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Botones",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9704,7 +9704,7 @@
                           },
                           "parameters": [
                             "",
-                            "\"Mundos\"",
+                            "\"bienestar\"",
                             ""
                           ],
                           "subInstructions": []
@@ -10695,7 +10695,7 @@
       "title": "Bienestar",
       "v": 0,
       "uiSettings": {
-        "grid": true,
+        "grid": false,
         "gridB": 255,
         "gridG": 180,
         "gridHeight": 32,
@@ -10703,9 +10703,9 @@
         "gridOffsetY": 0,
         "gridR": 158,
         "gridWidth": 32,
-        "snap": true,
+        "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.5
+        "zoomFactor": 0.548
       },
       "objectsGroups": [
         {
@@ -11600,21 +11600,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -957,
-          "y": -66,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
           "layer": "GUI",
           "locked": false,
           "name": "TxtPuntos",
@@ -12144,23 +12129,8 @@
           "locked": false,
           "name": "Moneda",
           "width": 0,
-          "x": -761,
-          "y": -36,
-          "zOrder": 87,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -836.67,
-          "y": -585.76,
+          "x": -864,
+          "y": -896,
           "zOrder": 87,
           "numberProperties": [],
           "stringProperties": [],
@@ -13179,54 +13149,9 @@
           "locked": false,
           "name": "Moneda",
           "width": 0,
-          "x": 293.581,
-          "y": -226.634,
+          "x": -864,
+          "y": -96,
           "zOrder": 160,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 1.50217,
-          "y": -825.644,
-          "zOrder": 161,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": 872.789,
-          "y": -875.148,
-          "zOrder": 162,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Moneda",
-          "width": 0,
-          "x": -1156.91,
-          "y": -320.693,
-          "zOrder": 163,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -23547,16 +23472,6 @@
               },
               "parameters": [
                 "placeR2"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Cache"
-              },
-              "parameters": [
-                "placeR3"
               ],
               "subInstructions": []
             }
