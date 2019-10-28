@@ -6323,7 +6323,7 @@
     },
     {
       "name": "Nivel",
-      "value": ""
+      "value": "1"
     },
     {
       "name": "Exp",
@@ -6363,7 +6363,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.548
+        "zoomFactor": 0.5
       },
       "objectsGroups": [],
       "variables": [],
@@ -8031,7 +8031,7 @@
                   "parameters": [
                     "NOMBRE",
                     "=",
-                    "SubStr(InputName.String(),0,6)\n"
+                    "SubStr(InputName.String(),0,8)\n"
                   ],
                   "subInstructions": []
                 }
@@ -11397,7 +11397,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.356
+        "zoomFactor": 0.188
       },
       "objectsGroups": [
         {
@@ -14662,6 +14662,18 @@
                 "0"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "puntos",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -15301,52 +15313,50 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "ContadorMonedas",
+                    "puntos",
                     "=",
-                    "5"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobal"
-                  },
-                  "parameters": [
-                    "Exp",
-                    ">",
-                    "8"
+                    "50"
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "Nivel",
-                    "+",
-                    "1"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Nivel",
+                        ">=",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"PararNivel\"",
-                    ""
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"PararNivel\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "events": []
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": []
@@ -19431,100 +19441,23 @@
                     "0"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Error",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "ENEMIGOS",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "explosion",
-                        "disparo.X()",
-                        "disparo.Y()",
-                        "\"\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "disparo",
-                        "disparo.X()",
-                        "disparo.Y()",
-                        "\"\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "disparo",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "explosion",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
+              "events": []
             }
           ],
           "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
         },
         {
           "colorB": 228,
@@ -20330,21 +20263,6 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "puerta",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
           "comment": "camara ",
           "comment2": ""
         },
@@ -20462,14 +20380,6 @@
             }
           ],
           "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
         }
       ]
     },
@@ -20484,7 +20394,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Monedas",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -20527,18 +20437,6 @@
                     "Moneda",
                     "=",
                     "254"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "puntos",
-                    "+",
-                    "10"
                   ],
                   "subInstructions": []
                 },
@@ -20778,7 +20676,7 @@
                   "parameters": [
                     "Exp",
                     ">=",
-                    "20"
+                    "8"
                   ],
                   "subInstructions": []
                 }
@@ -20790,9 +20688,9 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Exp",
-                    "=",
-                    "0"
+                    "Nivel",
+                    "+",
+                    "1"
                   ],
                   "subInstructions": []
                 },
@@ -20802,9 +20700,9 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Nivel",
-                    "+",
-                    "1"
+                    "Exp",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 },
@@ -20844,47 +20742,65 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "Exp",
-                    "+",
-                    "2"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "ExpUp",
-                    "JUGADOR.X()",
-                    "JUGADOR.Y()-10",
-                    "\"GUI\""
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "Exp",
+                        "+",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "ExpUp",
+                        "JUGADOR.X()",
+                        "JUGADOR.Y()-10",
+                        "\"GUI\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "ExpUp",
+                        "=",
+                        "\"+2\""
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "ExpUp",
-                    "=",
-                    "\"+2\""
-                  ],
-                  "subInstructions": []
+                  "events": []
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": []
@@ -23381,7 +23297,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Pausa juego y mostrar preguntas",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -24152,7 +24068,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "RESPUESTAS",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -24305,18 +24221,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ModVarGlobal"
-                      },
-                      "parameters": [
-                        "Exp",
-                        "+",
-                        "2"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "Create"
                       },
                       "parameters": [
@@ -24324,7 +24228,7 @@
                         "ParticulaEstrella",
                         "RepuestaCorrecta.X()",
                         "RepuestaCorrecta.Y()",
-                        ""
+                        "\"preguntas\""
                       ],
                       "subInstructions": []
                     },
@@ -24674,7 +24578,29 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "puntos",
+                            "+",
+                            "10"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 }
               ]
             },
@@ -24749,6 +24675,38 @@
               },
               "parameters": [
                 "placeR3"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "ParticulaEstrella",
+                "=",
+                "100"
               ],
               "subInstructions": []
             }
