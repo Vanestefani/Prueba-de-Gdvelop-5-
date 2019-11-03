@@ -16154,7 +16154,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.418
+        "zoomFactor": 0.466
       },
       "objectsGroups": [
         {
@@ -19346,7 +19346,7 @@
         },
         {
           "name": "preguntas",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         },
@@ -19392,7 +19392,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.466
+        "zoomFactor": 0.61
       },
       "objectsGroups": [
         {
@@ -21536,7 +21536,7 @@
           "locked": false,
           "name": "Error",
           "width": 64,
-          "x": 1408,
+          "x": 1376,
           "y": -448,
           "zOrder": 231,
           "numberProperties": [],
@@ -21552,7 +21552,7 @@
           "name": "Error",
           "width": 64,
           "x": 1312,
-          "y": -352,
+          "y": -384,
           "zOrder": 232,
           "numberProperties": [],
           "stringProperties": [],
