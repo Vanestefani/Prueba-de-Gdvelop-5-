@@ -11408,7 +11408,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.548
+        "zoomFactor": 0.404
       },
       "objectsGroups": [
         {
@@ -15376,7 +15376,7 @@
       "layers": [
         {
           "name": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [
             {
               "defaultSize": true,
@@ -15393,7 +15393,7 @@
         },
         {
           "name": "GUI",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         },
@@ -15405,13 +15405,13 @@
         },
         {
           "name": "Inventario",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         },
         {
           "name": "preguntas",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         },
@@ -15529,6 +15529,17 @@
             },
             {
               "name": "ExpUp"
+            }
+          ]
+        },
+        {
+          "name": "Respuestas",
+          "objects": [
+            {
+              "name": "RespuestaIncorrectaUNO"
+            },
+            {
+              "name": "RespuestaIncorrectaDOS"
             }
           ]
         }
@@ -18093,6 +18104,17 @@
             },
             {
               "name": "ExpUp"
+            }
+          ]
+        },
+        {
+          "name": "Respuestas",
+          "objects": [
+            {
+              "name": "RespuestaIncorrectaUNO"
+            },
+            {
+              "name": "RespuestaIncorrectaDOS"
             }
           ]
         }
