@@ -11507,7 +11507,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.428
+        "zoomFactor": 0.332
       },
       "objectsGroups": [
         {
@@ -15407,6 +15407,580 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
+          "folded": true,
+          "name": "Cambiar texto preguntas y respuestas",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Qué es la herencia? \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"En la trasmisión de datos entre un variable y otra. \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Herencia es la transmisión del código entre unas clases y otras.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Heredar datos de un código fuente. \""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Qué es polimorfismo?\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"Un Objeto en la programación. \"\n"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Propiedad por la que es posible enviar mensajes sintácticamente iguales a objetos de tipos distintos.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Propiedad de usar varias clases al mismo tiempo \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "3"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Cuáles características se deben reunir para decir que hablamos de programación orientada a objetos?\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"Entendible, claridad, objetividad.\n\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Abstracción, encapsulación, herencia y polimorfismo; y los conceptos básicos que las forman: objetos, mensajes, clases, instancias y métodos\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Abstracción, encapsulación, herencia y polimorfismo. \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "4"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Para qué sirve la programación?\n\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"Para organizar ideas ejecutables.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Se utiliza para idear y ordenar las acciones que se realizarán en el marco de un proyecto.\n\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Para gestionar ideas en un computador.\n \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "5"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Que es programación?\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"Programación es la acción de programar una agenda que implica ordenar, estructurar o componer una serie de acciones cronológicas para cumplir un objetivo.\n \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Es una forma especial de programar, más cercana a como expresaríamos las cosas en la vida real que otros tipos de programación.\n\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Programar un objeto que cumple caracteriticas.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
           "folded": false,
           "name": "siguiente nivel",
           "source": "",
@@ -15552,7 +16126,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.202
+        "zoomFactor": 0.226
       },
       "objectsGroups": [
         {
@@ -17018,8 +17592,8 @@
           "locked": false,
           "name": "Error",
           "width": 66,
-          "x": 880,
-          "y": -538,
+          "x": 875,
+          "y": -535,
           "zOrder": 179,
           "numberProperties": [],
           "stringProperties": [],
@@ -17033,7 +17607,7 @@
           "locked": false,
           "name": "Error",
           "width": 73,
-          "x": 1799,
+          "x": 1817,
           "y": -538,
           "zOrder": 180,
           "numberProperties": [],
@@ -17643,7 +18217,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "siguiente nivel",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17661,7 +18235,7 @@
                   "parameters": [
                     "puntos",
                     "=",
-                    "100"
+                    "50"
                   ],
                   "subInstructions": []
                 }
@@ -18129,12 +18703,578 @@
           "events": []
         },
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
+          "folded": true,
+          "name": "Cambiar texto preguntas y respuestas",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Qué es la herencia? \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"En la trasmisión de datos entre un variable y otra. \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Herencia es la transmisión del código entre unas clases y otras.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Heredar datos de un código fuente. \""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Qué es polimorfismo?\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"Un Objeto en la programación. \"\n"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Propiedad por la que es posible enviar mensajes sintácticamente iguales a objetos de tipos distintos.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Propiedad de usar varias clases al mismo tiempo \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "3"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Cuáles características se deben reunir para decir que hablamos de programación orientada a objetos?\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"Entendible, claridad, objetividad.\n\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Abstracción, encapsulación, herencia y polimorfismo; y los conceptos básicos que las forman: objetos, mensajes, clases, instancias y métodos\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Abstracción, encapsulación, herencia y polimorfismo. \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "4"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Para qué sirve la programación?\n\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"Para organizar ideas ejecutables.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Se utiliza para idear y ordenar las acciones que se realizarán en el marco de un proyecto.\n\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Para gestionar ideas en un computador.\n \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "5"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Que es programación?\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"Programación es la acción de programar una agenda que implica ordenar, estructurar o componer una serie de acciones cronológicas para cumplir un objetivo.\n \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Es una forma especial de programar, más cercana a como expresaríamos las cosas en la vida real que otros tipos de programación.\n\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Programar un objeto que cumple caracteriticas.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
         }
       ],
       "layers": [
@@ -18207,7 +19347,7 @@
       "title": "Bienestar",
       "v": 116,
       "uiSettings": {
-        "grid": true,
+        "grid": false,
         "gridB": 255,
         "gridG": 180,
         "gridHeight": 32,
@@ -18215,7 +19355,7 @@
         "gridOffsetY": 0,
         "gridR": 158,
         "gridWidth": 32,
-        "snap": true,
+        "snap": false,
         "windowMask": false,
         "zoomFactor": 0.082
       },
@@ -18755,7 +19895,7 @@
           "width": 2033,
           "x": -1632,
           "y": -1718,
-          "zOrder": 176,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -18785,7 +19925,7 @@
           "width": 1096,
           "x": 239,
           "y": -2360,
-          "zOrder": 180,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -18800,7 +19940,7 @@
           "width": 0,
           "x": 2155,
           "y": -260,
-          "zOrder": 182,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -18815,7 +19955,7 @@
           "width": 2251,
           "x": -1359,
           "y": -30,
-          "zOrder": 185,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -18830,7 +19970,7 @@
           "width": 0,
           "x": 1582,
           "y": -1443,
-          "zOrder": 182,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -18845,7 +19985,7 @@
           "width": 419,
           "x": -562,
           "y": -943,
-          "zOrder": 177,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -18860,7 +20000,7 @@
           "width": 419,
           "x": -1172,
           "y": -699,
-          "zOrder": 177,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -18875,7 +20015,7 @@
           "width": 77,
           "x": -1295,
           "y": -740,
-          "zOrder": 186,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -18890,7 +20030,7 @@
           "width": 187,
           "x": 2559,
           "y": -3057,
-          "zOrder": 186,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -18920,7 +20060,7 @@
           "width": 4299,
           "x": -481,
           "y": 977,
-          "zOrder": 187,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -18933,8 +20073,8 @@
           "locked": false,
           "name": "PlayerHitBox",
           "width": 0,
-          "x": 1631,
-          "y": -2415,
+          "x": 1521,
+          "y": -2452,
           "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
@@ -20435,7 +21575,7 @@
           "width": 0,
           "x": 1491,
           "y": -359,
-          "zOrder": 216,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20465,7 +21605,7 @@
           "width": 0,
           "x": -861,
           "y": -860,
-          "zOrder": 218,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20480,7 +21620,7 @@
           "width": 0,
           "x": 864,
           "y": 950,
-          "zOrder": 219,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20495,7 +21635,7 @@
           "width": 0,
           "x": 2608,
           "y": -123,
-          "zOrder": 220,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20510,7 +21650,7 @@
           "width": 0,
           "x": 452,
           "y": -1563,
-          "zOrder": 221,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20525,7 +21665,7 @@
           "width": 0,
           "x": 1280,
           "y": -1600,
-          "zOrder": 222,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20540,7 +21680,7 @@
           "width": 96,
           "x": 480,
           "y": -1600,
-          "zOrder": 223,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20570,7 +21710,7 @@
           "width": 0,
           "x": 224,
           "y": 224,
-          "zOrder": 225,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20583,9 +21723,9 @@
           "locked": false,
           "name": "Error",
           "width": 96,
-          "x": 160,
-          "y": 0,
-          "zOrder": 226,
+          "x": 175,
+          "y": 15,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20600,7 +21740,7 @@
           "width": 0,
           "x": 1344,
           "y": -384,
-          "zOrder": 227,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20615,7 +21755,7 @@
           "width": 0,
           "x": 1344,
           "y": -192,
-          "zOrder": 228,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20630,7 +21770,7 @@
           "width": 0,
           "x": 1728,
           "y": -416,
-          "zOrder": 229,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20645,7 +21785,7 @@
           "width": 0,
           "x": 1376,
           "y": -416,
-          "zOrder": 230,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20660,7 +21800,7 @@
           "width": 64,
           "x": 1408,
           "y": -448,
-          "zOrder": 231,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20675,52 +21815,88 @@
           "width": 64,
           "x": 1312,
           "y": -352,
-          "zOrder": 232,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Moneda",
+          "width": 0,
+          "x": 864,
+          "y": 950,
+          "zOrder": 219,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Moneda",
+          "width": 0,
+          "x": 864,
+          "y": 950,
+          "zOrder": 219,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Moneda",
+          "width": 0,
+          "x": 864,
+          "y": 950,
+          "zOrder": 219,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Moneda",
+          "width": 0,
+          "x": 864,
+          "y": 950,
+          "zOrder": 219,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Moneda",
+          "width": 0,
+          "x": 864,
+          "y": 950,
+          "zOrder": 219,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         }
       ],
       "objects": [
-        {
-          "name": "Fondo",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Recursos\\Fondos\\sede 67\\sede 67.jpg",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           "name": "NewObject",
           "tags": "",
@@ -21153,42 +22329,6 @@
       ],
       "events": [
         {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "FPersonaje"
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "FpEscenas"
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "fobjetos"
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Experiencia"
-        },
-        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
@@ -21425,31 +22565,787 @@
           "parameters": []
         },
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Inventario"
+          "name": "siguiente nivel",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "puntos",
+                    "=",
+                    "100"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Nivel",
+                        ">=",
+                        "4"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"win\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ],
+          "parameters": []
         },
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Disparo"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "ContadorMonedas",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "puntos",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         },
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "FEnemigos"
+          "folded": true,
+          "name": "Clases externas",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "FPersonaje"
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "FpEscenas"
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "fobjetos"
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "Experiencia"
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "Disparo"
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "FEnemigos"
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "Vida"
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "FPreguntasCoin"
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "Inventario"
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": true,
+          "name": "Cambiar texto preguntas y respuestas",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Qué es la herencia? \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"En la trasmisión de datos entre un variable y otra. \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Herencia es la transmisión del código entre unas clases y otras.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Heredar datos de un código fuente. \""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Qué es polimorfismo?\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"Un Objeto en la programación. \"\n"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Propiedad por la que es posible enviar mensajes sintácticamente iguales a objetos de tipos distintos.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Propiedad de usar varias clases al mismo tiempo \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "3"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Cuáles características se deben reunir para decir que hablamos de programación orientada a objetos?\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"Entendible, claridad, objetividad.\n\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Abstracción, encapsulación, herencia y polimorfismo; y los conceptos básicos que las forman: objetos, mensajes, clases, instancias y métodos\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Abstracción, encapsulación, herencia y polimorfismo. \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "4"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Para qué sirve la programación?\n\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"Para organizar ideas ejecutables.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Se utiliza para idear y ordenar las acciones que se realizarán en el marco de un proyecto.\n\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Para gestionar ideas en un computador.\n \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ContadorMonedas",
+                    "=",
+                    "5"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Pregunta",
+                    "=",
+                    "\"¿Que es programación?\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "\"Programación es la acción de programar una agenda que implica ordenar, estructurar o componer una serie de acciones cronológicas para cumplir un objetivo.\n \""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "\"Es una forma especial de programar, más cercana a como expresaríamos las cosas en la vida real que otros tipos de programación.\n\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "\"Programar un objeto que cumple caracteriticas.\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaUNO",
+                    "=",
+                    "placeR3.X()",
+                    "=",
+                    "placeR3.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RepuestaCorrecta",
+                    "=",
+                    "placeR1.X()",
+                    "=",
+                    "placeR1.Y()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "RespuestaIncorrectaDOS",
+                    "=",
+                    "placeR2.X()",
+                    "=",
+                    "placeR2.Y()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
         },
         {
           "disabled": false,
@@ -21746,6 +23642,242 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        }
+      ]
+    },
+    {
+      "b": 0,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "win",
+      "name": "win",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 0,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 0,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 0.308
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "NewObject",
+          "width": 0,
+          "x": 133,
+          "y": 159,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 114,
+          "layer": "",
+          "locked": false,
+          "name": "txtpresiona",
+          "width": 454,
+          "x": 349,
+          "y": 323,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "bold": true,
+          "italic": false,
+          "name": "NewObject",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Has pasado el juego",
+          "font": "Recursos\\Tipografias\\Baloo_Chettan\\BalooChettan-Regular.ttf",
+          "characterSize": 100,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "txtpresiona",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Presiona espacio para volver al menu",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Exp",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "LifeJugador",
+                "=",
+                "10"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Nivel",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Space"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Menu\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+        },
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
@@ -26161,580 +28293,6 @@
                   "parameters": [
                     "",
                     "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Cambiar texto preguntas y respuestas",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "ContadorMonedas",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Pregunta",
-                    "=",
-                    "\"¿Qué es la herencia? \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaUNO",
-                    "=",
-                    "\"En la trasmisión de datos entre un variable y otra. \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaUNO",
-                    "=",
-                    "placeR3.X()",
-                    "=",
-                    "placeR3.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RepuestaCorrecta",
-                    "=",
-                    "\"Herencia es la transmisión del código entre unas clases y otras.\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RepuestaCorrecta",
-                    "=",
-                    "placeR1.X()",
-                    "=",
-                    "placeR1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaDOS",
-                    "=",
-                    "placeR2.X()",
-                    "=",
-                    "placeR2.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaDOS",
-                    "=",
-                    "\"Heredar datos de un código fuente. \""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "ContadorMonedas",
-                    "=",
-                    "2"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Pregunta",
-                    "=",
-                    "\"¿Qué es polimorfismo?\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaUNO",
-                    "=",
-                    "\"Un Objeto en la programación. \"\n"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RepuestaCorrecta",
-                    "=",
-                    "\"Propiedad por la que es posible enviar mensajes sintácticamente iguales a objetos de tipos distintos.\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaDOS",
-                    "=",
-                    "\"Propiedad de usar varias clases al mismo tiempo \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RepuestaCorrecta",
-                    "=",
-                    "placeR2.X()",
-                    "=",
-                    "placeR2.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaUNO",
-                    "=",
-                    "placeR1.X()",
-                    "=",
-                    "placeR1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaDOS",
-                    "=",
-                    "placeR3.X()",
-                    "=",
-                    "placeR3.Y()"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "ContadorMonedas",
-                    "=",
-                    "3"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Pregunta",
-                    "=",
-                    "\"¿Cuáles características se deben reunir para decir que hablamos de programación orientada a objetos?\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaUNO",
-                    "=",
-                    "\"Entendible, claridad, objetividad.\n\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RepuestaCorrecta",
-                    "=",
-                    "\"Abstracción, encapsulación, herencia y polimorfismo; y los conceptos básicos que las forman: objetos, mensajes, clases, instancias y métodos\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaDOS",
-                    "=",
-                    "\"Abstracción, encapsulación, herencia y polimorfismo. \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RepuestaCorrecta",
-                    "=",
-                    "placeR1.X()",
-                    "=",
-                    "placeR1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaUNO",
-                    "=",
-                    "placeR3.X()",
-                    "=",
-                    "placeR3.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaDOS",
-                    "=",
-                    "placeR2.X()",
-                    "=",
-                    "placeR2.Y()"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "ContadorMonedas",
-                    "=",
-                    "4"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Pregunta",
-                    "=",
-                    "\"¿Para qué sirve la programación?\n\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaUNO",
-                    "=",
-                    "\"Para organizar ideas ejecutables.\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RepuestaCorrecta",
-                    "=",
-                    "\"Se utiliza para idear y ordenar las acciones que se realizarán en el marco de un proyecto.\n\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaDOS",
-                    "=",
-                    "\"Para gestionar ideas en un computador.\n \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaDOS",
-                    "=",
-                    "placeR1.X()",
-                    "=",
-                    "placeR1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaUNO",
-                    "=",
-                    "placeR3.X()",
-                    "=",
-                    "placeR3.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RepuestaCorrecta",
-                    "=",
-                    "placeR2.X()",
-                    "=",
-                    "placeR2.Y()"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "ContadorMonedas",
-                    "=",
-                    "5"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Pregunta",
-                    "=",
-                    "\"¿Que es programación?\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaUNO",
-                    "=",
-                    "\"Programación es la acción de programar una agenda que implica ordenar, estructurar o componer una serie de acciones cronológicas para cumplir un objetivo.\n \""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RepuestaCorrecta",
-                    "=",
-                    "\"Es una forma especial de programar, más cercana a como expresaríamos las cosas en la vida real que otros tipos de programación.\n\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaDOS",
-                    "=",
-                    "\"Programar un objeto que cumple caracteriticas.\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaUNO",
-                    "=",
-                    "placeR3.X()",
-                    "=",
-                    "placeR3.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RepuestaCorrecta",
-                    "=",
-                    "placeR1.X()",
-                    "=",
-                    "placeR1.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "RespuestaIncorrectaDOS",
-                    "=",
-                    "placeR2.X()",
-                    "=",
-                    "placeR2.Y()"
                   ],
                   "subInstructions": []
                 }
