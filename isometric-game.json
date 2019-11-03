@@ -16154,7 +16154,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.25
+        "zoomFactor": 0.418
       },
       "objectsGroups": [
         {
@@ -19346,7 +19346,7 @@
         },
         {
           "name": "preguntas",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         },
@@ -19382,7 +19382,7 @@
       "title": "Bienestar",
       "v": 116,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridB": 255,
         "gridG": 180,
         "gridHeight": 32,
@@ -19390,9 +19390,9 @@
         "gridOffsetY": 0,
         "gridR": 158,
         "gridWidth": 32,
-        "snap": false,
+        "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.082
+        "zoomFactor": 0.466
       },
       "objectsGroups": [
         {
@@ -19479,6 +19479,9 @@
             },
             {
               "name": "RespuestaIncorrectaDOS"
+            },
+            {
+              "name": "RepuestaCorrecta"
             }
           ]
         }
@@ -21398,8 +21401,8 @@
           "locked": false,
           "name": "Izquierda",
           "width": 0,
-          "x": 1280,
-          "y": -1600,
+          "x": 1152,
+          "y": -1568,
           "zOrder": 222,
           "numberProperties": [],
           "stringProperties": [],
@@ -21413,7 +21416,7 @@
           "locked": false,
           "name": "Error",
           "width": 96,
-          "x": 480,
+          "x": 448,
           "y": -1600,
           "zOrder": 223,
           "numberProperties": [],
@@ -22359,7 +22362,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Clases externas",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -23051,7 +23054,7 @@
         },
         {
           "name": "GUI",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         },
@@ -23063,18 +23066,18 @@
         },
         {
           "name": "Inventario",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "preguntas",
           "visibility": false,
           "cameras": [],
           "effects": []
         },
         {
           "name": "RESULTADORespue",
-          "visibility": false,
-          "cameras": [],
-          "effects": []
-        },
-        {
-          "name": "preguntas",
           "visibility": false,
           "cameras": [],
           "effects": []
