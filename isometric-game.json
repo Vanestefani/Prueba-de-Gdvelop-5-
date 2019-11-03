@@ -14794,7 +14794,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Clases externas",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -15981,7 +15981,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "siguiente nivel",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -16213,6 +16213,9 @@
             },
             {
               "name": "RespuestaIncorrectaDOS"
+            },
+            {
+              "name": "RepuestaCorrecta"
             }
           ]
         }
@@ -18708,7 +18711,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Cambiar texto preguntas y respuestas",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22588,7 +22591,7 @@
                   "parameters": [
                     "puntos",
                     "=",
-                    "100"
+                    "50"
                   ],
                   "subInstructions": []
                 }
