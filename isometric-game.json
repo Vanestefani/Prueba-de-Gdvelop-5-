@@ -20474,6 +20474,17 @@
                     ""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "disparo",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
